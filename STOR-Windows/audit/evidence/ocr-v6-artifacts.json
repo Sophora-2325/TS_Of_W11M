@@ -1,0 +1,12 @@
+[
+  {
+    "path": "D:\\STOR\\src-tauri\\target\\release\\stor.exe",
+    "bytes": 17456128,
+    "sha256": "f7b361b5fbed7b273e4e0ccffe0d3a8ace24c5cc7835635fbc2f0f60a1af394e"
+  },
+  {
+    "path": "D:\\STOR\\src-tauri\\target\\release\\bundle\\nsis\\STOR_0.1.0_x64-setup.exe",
+    "bytes": 76409421,
+    "sha256": "2fb7c38606406d4421e2404ef5f8a7552148d11877a97d08838db645fbaac5aa"
+  }
+]

@@ -1,0 +1,15 @@
+STOR 截图生命周期修复前的确定性失败。日期：2026-10-26。
+
+命令：
+cd D:\STOR\src-tauri
+cargo test --offline --lib lifecycle_gap -- --nocapture
+
+结果：2 失败，既有 20 项被过滤未计入本次失败。
+
+---- capture::screen::lifecycle_gap_tests::crop_rejects_rectangle_on_another_monitor stdout ----
+thread panicked at src\capture\screen.rs: 其他显示器的矩形被钳进当前缓存
+
+---- capture::screen::lifecycle_gap_tests::frozen_snapshot_remains_valid_after_three_seconds stdout ----
+thread panicked at src\capture\screen.rs: 冻结底图超过 3 秒后被丢弃
+
+test result: FAILED. 0 passed; 2 failed; 0 ignored; 0 measured; 20 filtered out

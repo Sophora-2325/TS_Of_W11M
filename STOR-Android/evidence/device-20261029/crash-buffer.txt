@@ -1,0 +1,5 @@
+--------- beginning of crash
+05-29 03:40:36.619  1193  1193 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1193 (init), pid 1193 (init)
+05-29 03:40:36.626  1193  1193 F libc    : Crash due to signal: crash_dump helper failed to exec, or was killed
+10-29 05:00:24.545  6813  6813 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 6813 (init), pid 6813 (init)
+10-29 05:00:24.606  6813  6813 F libc    : Crash due to signal: crash_dump helper failed to exec, or was killed

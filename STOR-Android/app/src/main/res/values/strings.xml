@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">见译</string>
+    <string name="capture_notification_title">见译屏幕识别已开启</string>
+</resources>

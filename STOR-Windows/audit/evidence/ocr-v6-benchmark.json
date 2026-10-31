@@ -1,0 +1,30 @@
+{
+  "model": "PP-OCRv6 small",
+  "startupMs": 845,
+  "modelLoadMs": 705,
+  "fixtures": [
+    {
+      "language": "en",
+      "exactMatch": true,
+      "runs": 5,
+      "medianMs": 64,
+      "maxMs": 90
+    },
+    {
+      "language": "zh",
+      "exactMatch": true,
+      "runs": 5,
+      "medianMs": 54,
+      "maxMs": 60
+    },
+    {
+      "language": "ja",
+      "exactMatch": true,
+      "runs": 5,
+      "medianMs": 52,
+      "maxMs": 59
+    }
+  ],
+  "httpProxyUnreachable": true,
+  "runtimeBytes": 208654946
+}

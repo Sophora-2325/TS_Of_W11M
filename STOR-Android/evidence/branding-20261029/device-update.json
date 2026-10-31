@@ -1,0 +1,9 @@
+{
+  "version": "0.2.0-internal.3",
+  "versionCode": 5,
+  "appId": "com.stor.android",
+  "appName": "见译",
+  "homeNameVerified": true,
+  "configFieldsUnchanged": true,
+  "apiKeyMasked": true
+}

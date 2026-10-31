@@ -1,0 +1,11 @@
+stor-capture session=1 phase=begin elapsed_ms=0 width=2560 height=1600 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=geometry elapsed_ms=11 width=2560 height=1600 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=hide-overlay elapsed_ms=17 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=composition-flush elapsed_ms=30 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=encoded elapsed_ms=138 width=2560 height=1600 bytes=328422 rgb_spread=245 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=published elapsed_ms=256 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=frontend-ready elapsed_ms=302 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=image-ok elapsed_ms=326 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=shown elapsed_ms=326 width=2560 height=1600 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=ocr-capture elapsed_ms=52367 width=975 height=272 bytes=43909 rgb_spread=0 alpha_zero_pct=0 error=-
+stor-capture session=1 phase=ocr-done elapsed_ms=52549 width=975 height=272 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-

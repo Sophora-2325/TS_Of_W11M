@@ -1,0 +1,110 @@
+2026-10-28 07:19:29.641: [INFO] CurrentProfilePath: D:\STOR\.cache\edge-cdp\Default
+2026-10-28 07:19:29.641: [INFO] Profiles total count: 1
+2026-10-28 07:19:29.641: [INFO] Profile: name=用户配置 1 path=D:\STOR\.cache\edge-cdp\Default lastActive=null
+2026-10-28 07:19:29.641: [INFO] LastUsedProfileDir: D:\STOR\.cache\edge-cdp\Default
+2026-10-28 07:19:29.641: [INFO] VisibilityChanged: 0
+2026-10-28 07:19:29.655: [INFO] OnDoneLoading sync enabled: 0
+2026-10-28 07:19:29.655: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-28 07:19:29.655: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-28 07:19:29.655: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-28 07:19:29.706: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-28 07:19:30.294: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-28 07:19:30.296: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:30.298: [INFO] Primary account changed.
+2026-10-28 07:19:30.298: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-10-28 07:19:30.304: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:30.313: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:32.284: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-28 07:19:32.284: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-28 07:19:32.285: [INFO] BookmarkNodeAdded, ABU: 0
+2026-10-28 07:19:32.687: [INFO] Sync initialization duration: 2303ms
+2026-10-28 07:19:46.160: [INFO] CurrentProfilePath: D:\STOR\.cache\edge-cdp\Default
+2026-10-28 07:19:46.160: [INFO] Profiles total count: 1
+2026-10-28 07:19:46.160: [INFO] Profile: name=个人 path=D:\STOR\.cache\edge-cdp\Default lastActive=2026-10-28T07:19:29.649Z
+2026-10-28 07:19:46.160: [INFO] LastUsedProfileDir: D:\STOR\.cache\edge-cdp\Default
+2026-10-28 07:19:46.160: [INFO] MostRecentlyActiveProfile: name=个人 path=D:\STOR\.cache\edge-cdp\Default lastActive=2026-10-28T07:19:29.649Z
+2026-10-28 07:19:46.160: [INFO] VisibilityChanged: 0
+2026-10-28 07:19:46.177: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:46.177: [INFO] OnDoneLoading sync enabled: 0
+2026-10-28 07:19:46.177: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-28 07:19:46.177: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-28 07:19:46.177: [INFO] BookmarksSnapshot Startup total=3 bar=3 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-28 07:19:46.197: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:46.208: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:46.538: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:46.540: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:46.542: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:46.544: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:46.547: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:46.549: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:19:46.551: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:19:46.554: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:19:47.615: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:19:47.617: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:19:47.840: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:19:48.049: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:19:48.052: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:19:48.054: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:19:50.040: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:19:50.042: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:19:50.713: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:20:18.206: [INFO] CurrentProfilePath: D:\STOR\.cache\edge-cdp\Default
+2026-10-28 07:20:18.206: [INFO] Profiles total count: 1
+2026-10-28 07:20:18.206: [INFO] Profile: name=个人 path=D:\STOR\.cache\edge-cdp\Default lastActive=2026-10-28T07:19:29.649Z
+2026-10-28 07:20:18.206: [INFO] LastUsedProfileDir: D:\STOR\.cache\edge-cdp\Default
+2026-10-28 07:20:18.206: [INFO] MostRecentlyActiveProfile: name=个人 path=D:\STOR\.cache\edge-cdp\Default lastActive=2026-10-28T07:19:29.649Z
+2026-10-28 07:20:18.206: [INFO] VisibilityChanged: 0
+2026-10-28 07:20:18.228: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:20:18.228: [INFO] OnDoneLoading sync enabled: 0
+2026-10-28 07:20:18.228: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-28 07:20:18.228: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-28 07:20:18.228: [INFO] BookmarksSnapshot Startup total=3 bar=3 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-28 07:20:18.237: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:20:18.270: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:20:18.603: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:20:18.604: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:20:18.605: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:20:18.609: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:20:18.610: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:20:18.611: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:20:18.612: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:20:18.613: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:20:19.814: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:20:19.815: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:20:20.009: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:20:20.228: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:20:20.229: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:20:20.230: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:20:20.747: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:20:20.748: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:20:20.964: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:23:06.077: [INFO] CurrentProfilePath: D:\STOR\.cache\edge-cdp\Default
+2026-10-28 07:23:06.077: [INFO] Profiles total count: 1
+2026-10-28 07:23:06.077: [INFO] Profile: name=个人 path=D:\STOR\.cache\edge-cdp\Default lastActive=2026-10-28T07:19:29.649Z
+2026-10-28 07:23:06.077: [INFO] LastUsedProfileDir: D:\STOR\.cache\edge-cdp\Default
+2026-10-28 07:23:06.077: [INFO] MostRecentlyActiveProfile: name=个人 path=D:\STOR\.cache\edge-cdp\Default lastActive=2026-10-28T07:19:29.649Z
+2026-10-28 07:23:06.077: [INFO] VisibilityChanged: 0
+2026-10-28 07:23:06.095: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:23:06.095: [INFO] OnDoneLoading sync enabled: 0
+2026-10-28 07:23:06.095: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-28 07:23:06.095: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-28 07:23:06.095: [INFO] BookmarksSnapshot Startup total=3 bar=3 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-28 07:23:06.104: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:23:06.129: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:23:06.447: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:23:06.449: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:23:06.450: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:23:06.462: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:23:06.463: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:23:06.464: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:23:06.466: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:23:06.467: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:23:07.460: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:23:07.463: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:23:07.832: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:23:08.028: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 5
+2026-10-28 07:23:08.030: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:23:08.031: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:23:08.818: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:23:08.820: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6
+2026-10-28 07:23:09.032: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 6

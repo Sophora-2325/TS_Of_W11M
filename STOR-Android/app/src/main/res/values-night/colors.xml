@@ -1,0 +1,10 @@
+<resources>
+    <color name="stor_background">#121614</color>
+    <color name="stor_surface">#1D2420</color>
+    <color name="stor_primary">#B9CBA9</color>
+    <color name="stor_on_primary">#19251B</color>
+    <color name="stor_ink">#F2F5EF</color>
+    <color name="stor_muted">#A9B4AB</color>
+    <color name="stor_outline">#354238</color>
+    <color name="stor_error">#FFB4AB</color>
+</resources>

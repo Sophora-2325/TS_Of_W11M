@@ -1,0 +1,9 @@
+{
+  "fixtureRemoved": true,
+  "label": "PP-OCRv6 small",
+  "status": {
+    "error": null,
+    "model": "PP-OCRv6 small",
+    "state": "ready"
+  }
+}

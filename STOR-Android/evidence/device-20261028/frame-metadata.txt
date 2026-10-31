@@ -1,0 +1,3 @@
+--------- beginning of main
+10-28 21:03:01.629 23160 23160 I STOR_CAPTURE: timestamp=45881206018380 alpha=[255, 255, 255] cleared=false
+10-28 21:03:04.137 23160 23160 I STOR_CAPTURE: timestamp=45883739660827 alpha=[255, 255, 255] cleared=false

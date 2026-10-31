@@ -1,0 +1,46 @@
+{
+  "cold": [],
+  "continuous": null,
+  "failure": {
+    "patched": true,
+    "typed": "生命周期验收原文",
+    "reopenResult": {
+      "ok": false,
+      "error": "Error: {\"type\":\"string\",\"value\":\"底图解码失败\"}"
+    },
+    "visible": {
+      "main": false,
+      "popup": true,
+      "overlay": false
+    },
+    "popup": {
+      "text": "生命周期验收原文",
+      "error": "底图解码失败",
+      "visibleText": "STOR 翻译\n−\n×\n原文（可编辑）\n\n中文/日文：请在原文框中拖选词语\n\n翻译为\n中文\nEnglish\n日本語\n底图解码失败\n上下文查词\n尚未选中词语\n解释语言\n中文\nEnglish\n日本語\n查词\n复制译文\n复制释义\n重新框选"
+    },
+    "popupError": null,
+    "labels": [
+      "overlay",
+      "popup",
+      "main"
+    ],
+    "prepare": {
+      "sessionId": "1",
+      "message": "底图解码失败",
+      "surface": "popup"
+    },
+    "trace": [
+      "session=1 phase=begin elapsed_ms=0 width=2560 height=1600 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=hide-overlay elapsed_ms=0 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=composition-flush elapsed_ms=3 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=hide-popup elapsed_ms=3 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=geometry elapsed_ms=25 width=2560 height=1600 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=encoded elapsed_ms=140 width=2560 height=1600 bytes=275287 rgb_spread=255 alpha_zero_pct=0 error=-",
+      "session=1 phase=published elapsed_ms=141 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=frontend-ready elapsed_ms=151 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=restore-popup elapsed_ms=0 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=底图解码失败",
+      "session=1 phase=dismiss elapsed_ms=157 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=底图解码失败"
+    ]
+  },
+  "error": null
+}

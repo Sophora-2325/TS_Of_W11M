@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0-internal.2",
+  "versionCode": 4,
+  "apkBytes": 104240041,
+  "previousApkBytes": 92930209,
+  "deltaBytes": 11309832,
+  "sha256": "e6af246ca8f01a349034947b600903d39fb20d110a5842ce68a71c759597834f",
+  "localOcr": "Read the words on your screen.",
+  "formalConfig": {
+    "fields": 3,
+    "filled": 3,
+    "apiKeyMasked": true
+  },
+  "stopSession": {
+    "samePid": true,
+    "serviceStopped": true,
+    "restartButtonVisible": true
+  },
+  "realTranslationRequestsThisRun": 0,
+  "restored": {
+    "fontScale": 1.15,
+    "rotation": "lock 0",
+    "nightMode": "auto"
+  },
+  "qaPackagesRemoved": [
+    "com.stor.android.uipreview",
+    "com.stor.android.uipreview.test"
+  ],
+  "lintErrors": 0,
+  "lintWarnings": 19
+}

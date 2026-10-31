@@ -1,0 +1,2 @@
+technical-stack.html: {"demo":"none","docSwitch":"none","printToc":"block","quiz":"none","calc":"none","scrollWidth":800}
+implementation-plan.html: {"demo":"none","docSwitch":"none","printToc":"block","quiz":"none","calc":"none","scrollWidth":800}

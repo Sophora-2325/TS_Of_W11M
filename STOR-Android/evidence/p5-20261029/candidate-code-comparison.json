@@ -1,0 +1,62 @@
+[
+  {
+    "Entry": "classes.dex",
+    "Matches": true
+  },
+  {
+    "Entry": "lib/arm64-v8a/libandroidx.graphics.path.so",
+    "Matches": true
+  },
+  {
+    "Entry": "lib/arm64-v8a/libc++_shared.so",
+    "Matches": true
+  },
+  {
+    "Entry": "lib/arm64-v8a/libdatastore_shared_counter.so",
+    "Matches": true
+  },
+  {
+    "Entry": "lib/arm64-v8a/libonnxruntime.so",
+    "Matches": true
+  },
+  {
+    "Entry": "lib/arm64-v8a/libonnxruntime4j_jni.so",
+    "Matches": true
+  },
+  {
+    "Entry": "lib/arm64-v8a/libopencv_java4.so",
+    "Matches": true
+  },
+  {
+    "Entry": "assets/models/det-README.md",
+    "Matches": true
+  },
+  {
+    "Entry": "assets/models/det.onnx",
+    "Matches": true
+  },
+  {
+    "Entry": "assets/models/det.yml",
+    "Matches": true
+  },
+  {
+    "Entry": "assets/models/manifest.json",
+    "Matches": true
+  },
+  {
+    "Entry": "assets/models/ppocrv6_dict.txt",
+    "Matches": true
+  },
+  {
+    "Entry": "assets/models/rec-README.md",
+    "Matches": true
+  },
+  {
+    "Entry": "assets/models/rec.onnx",
+    "Matches": true
+  },
+  {
+    "Entry": "assets/models/rec.yml",
+    "Matches": true
+  }
+]

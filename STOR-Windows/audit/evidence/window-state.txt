@@ -1,0 +1,8 @@
+{
+  "labels": [
+    "overlay",
+    "popup",
+    "main"
+  ],
+  "overlayVisible": false
+}

@@ -1,0 +1,10 @@
+tech base {"innerWidth":390,"innerHeight":900,"scrollWidth":390,"bodyWidth":390,"scrollHeight":19256}
+tech overflow []
+tech quiz {"score":"已答 1 / 5，答对 0","feedback":"还差一点。正确答案是“跨应用取图是否顺手，以及现有模型在手机上的完整识别速度和准","disabled":4}
+tech dialog {"open":true,"width":351}
+tech exceptions []
+plan base {"innerWidth":390,"innerHeight":900,"scrollWidth":390,"bodyWidth":390,"scrollHeight":16450}
+plan overflow []
+plan quiz {"score":"已答 1 / 5，答对 0","feedback":"还差一点。正确答案是“P1 和 P2 的证据，再补完整闭环和界面”。\n\n文中明确","disabled":4}
+plan dialog {"open":true,"width":351}
+plan exceptions []

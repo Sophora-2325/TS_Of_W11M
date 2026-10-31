@@ -1,0 +1,52 @@
+   Compiling stor-audit v0.0.0 (D:\STOR\audit\rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.68s
+     Running unittests src\main.rs (src-tauri/target\debug\deps\stor_audit-1f2f2fab42f7f34d.exe)
+
+running 10 tests
+test capture::screen::freeze_frame_jpeg_should_encode ... ok
+test capture::screen::fresh_snapshot_crop ... ok
+
+thread 'capture::screen::frozen_snapshot_should_survive_slow_selection' (40400) panicked at src\main.rs:9:261:
+frozen image expires after 3 seconds although still displayed
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test capture::screen::frozen_snapshot_should_survive_slow_selection ... FAILED
+
+thread 'capture::screen::snapshot_from_other_monitor_should_not_be_reused' (43724) panicked at src\main.rs:10:176:
+negative relative coordinate clamped to zero, wrong monitor reused
+test capture::screen::snapshot_from_other_monitor_should_not_be_reused ... FAILED
+Available OCR languages: ["zh-Hans-CN"]; max image dimension Ok(10000)
+fixture=en; engine=Err("操作成功完成。 (0x00000000)"); selected=Err("未能识别出文字，请尝试扩大选区或手动输入"); auto=Ok("HellO adventurer Quest complete")
+fixture=zh; engine=Ok(("冒 险 者 你 好 请 接 受 新 的 任 务", 0.8)); selected=Ok("冒 险 者 你 好 请 接 受 新 的 任 务"); auto=Ok("冒 险 者 你 好 请 接 受 新 的 任 务")
+fixture=ja; engine=Err("操作成功完成。 (0x00000000)"); selected=Err("未能识别出文字，请尝试扩大选区或手动输入"); auto=Ok("冒 者 新 匕 \\ 世 界 八")
+test ocr::installed_ocr_and_recognition_diagnostic ... ok
+
+thread 'tests::lookup_cache_should_not_collide' (35016) panicked at src\main.rs:30:47:
+assertion `left != right` failed
+  left: "lookup::zh::a::b::c"
+ right: "lookup::zh::a::b::c"
+test tests::lookup_cache_should_not_collide ... FAILED
+test tests::normal_stream ... ok
+
+thread 'tests::stream_without_done_should_fail' (29932) panicked at src\main.rs:28:159:
+truncated response accepted as successful, cacheable translation: Ok("partial")
+test tests::stream_without_done_should_fail ... FAILED
+test tests::translation_cache_roundtrip ... ok
+
+thread 'tests::utf8_split_should_preserve_text' (43128) panicked at src\main.rs:27:264:
+assertion `left == right` failed
+  left: "���好"
+ right: "你好"
+test tests::utf8_split_should_preserve_text ... FAILED
+
+failures:
+
+failures:
+    capture::screen::frozen_snapshot_should_survive_slow_selection
+    capture::screen::snapshot_from_other_monitor_should_not_be_reused
+    tests::lookup_cache_should_not_collide
+    tests::stream_without_done_should_fail
+    tests::utf8_split_should_preserve_text
+
+test result: FAILED. 5 passed; 5 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.40s
+
+error: test failed, to rerun pass `--bin stor-audit`

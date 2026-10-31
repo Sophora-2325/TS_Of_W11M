@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.STOR" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">@font/noto_sans_sc</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:colorAccent">#526748</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>

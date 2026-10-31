@@ -1,0 +1,6 @@
+---- TIME 2026/10/29 14:26:03 ----
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  (nothing)
+MEDIA PROJECTION MANAGER (dumpsys media_projection)
+Media Projection: 
+null

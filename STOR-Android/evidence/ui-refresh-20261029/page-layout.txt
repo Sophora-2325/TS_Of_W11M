@@ -1,0 +1,2 @@
+Page=home-final; scrollableNodes=0; anchorBefore=[504,1384][936,1489]; anchorAfter=[504,1384][936,1489]; unchanged=True
+Page=settings-final; scrollableNodes=0; anchorBefore=[576,2010][864,2115]; anchorAfter=[576,2010][864,2115]; unchanged=True

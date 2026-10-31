@@ -1,0 +1,1 @@
+PASS: landscape settings opened, rotated portrait and returned with identical source

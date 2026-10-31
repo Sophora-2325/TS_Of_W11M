@@ -1,0 +1,25 @@
+{
+  "device": "realme RMX5200",
+  "sdk": 36,
+  "loadMs": 197,
+  "samples": [
+    {
+      "language": "en",
+      "text": "Read the words on your screen.",
+      "elapsedMs": 140,
+      "desktopMatch": true
+    },
+    {
+      "language": "zh",
+      "text": "框选屏幕上的文字，识别后可以修改。",
+      "elapsedMs": 99,
+      "desktopMatch": true
+    },
+    {
+      "language": "ja",
+      "text": "画面の文字を選択してください。",
+      "elapsedMs": 107,
+      "desktopMatch": true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+=== technical-stack.html quiz=5
+Q1 answer=1 len=4 correct=跨应用取图是否顺手，以及现有模型在手机上的完整识别速度和准确率
+Q2 answer=1 len=4 correct=模型格式和运行时路线有依据，但还不能说 Android 端已跑通或达到桌面精度
+Q3 answer=2 len=4 correct=结束投屏并移除浮键；重新开启需要新授权
+Q4 answer=1 len=4 correct=手机自身
+Q5 answer=3 len=4 correct=检查所有 .so 的 ABI 与 16 KB page size 支持，并在对应
+bad answers: none
+=== implementation-plan.html quiz=5
+Q1 answer=1 len=4 correct=P1 和 P2 的证据，再补完整闭环和界面
+Q2 answer=2 len=4 correct=在给定前提下的估算，P1/P2 后要依据实测重估，不是交付承诺
+Q3 answer=3 len=4 correct=设备 / 系统 / 安装包版本、真实录屏、操作结果、待命内存与投屏待命耗电初步基
+Q4 answer=1 len=4 correct=用于 PoC 的初始目标，不是已测结果或对全部设备的承诺
+Q5 answer=2 len=4 correct=用户在已支持场景中，不需要开发者陪同，能开启会话、框选、修正、得到译文、回到原任
+bad answers: none
+=== tech-print.pdf pages=14 chars=10087
+  学完自测: False
+  目录: False
+  推荐结论: True
+  本轮决定: False
+  技术选择与对应价值: True
+  开发顺序与放行条件: False
+  自测: False
+=== plan-print.pdf pages=13 chars=7587
+  学完自测: False
+  目录: False
+  推荐结论: False
+  本轮决定: True
+  技术选择与对应价值: False
+  开发顺序与放行条件: False
+  自测: False

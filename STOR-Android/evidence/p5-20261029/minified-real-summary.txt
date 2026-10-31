@@ -1,0 +1,1 @@
+PASS: minified real translation completed; session stopped; process alive

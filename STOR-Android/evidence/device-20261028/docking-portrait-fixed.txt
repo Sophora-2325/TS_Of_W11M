@@ -1,0 +1,2 @@
+    mAttrs={(32,380)(224x224) gr=TOP LEFT CENTER sim={adjust=pan} ty=APPLICATION_OVERLAY fmt=TRANSLUCENT
+    Frames: parent=[0,160][1440,3072] display=[0,160][1440,3072] frame=[32,540][256,764] last=[32,540][256,764] insetsChanged=false

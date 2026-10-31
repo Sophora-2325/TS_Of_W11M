@@ -1,0 +1,295 @@
+{
+  "cold": [],
+  "continuous": {
+    "pid": 41264,
+    "rounds": [
+      {
+        "index": 1,
+        "elapsedMs": 244,
+        "sessionId": "1",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 2,
+        "elapsedMs": 293,
+        "sessionId": "2",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 3,
+        "elapsedMs": 247,
+        "sessionId": "3",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 4,
+        "elapsedMs": 255,
+        "sessionId": "4",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 5,
+        "elapsedMs": 215,
+        "sessionId": "5",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 6,
+        "elapsedMs": 224,
+        "sessionId": "6",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 7,
+        "elapsedMs": 232,
+        "sessionId": "7",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": true
+      },
+      {
+        "index": 8,
+        "elapsedMs": 244,
+        "sessionId": "8",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 9,
+        "elapsedMs": 236,
+        "sessionId": "9",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 10,
+        "elapsedMs": 258,
+        "sessionId": "10",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 11,
+        "elapsedMs": 223,
+        "sessionId": "11",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 12,
+        "elapsedMs": 251,
+        "sessionId": "12",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 13,
+        "elapsedMs": 249,
+        "sessionId": "13",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 14,
+        "elapsedMs": 271,
+        "sessionId": "14",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": true
+      },
+      {
+        "index": 15,
+        "elapsedMs": 293,
+        "sessionId": "15",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 16,
+        "elapsedMs": 274,
+        "sessionId": "16",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 17,
+        "elapsedMs": 295,
+        "sessionId": "17",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 18,
+        "elapsedMs": 272,
+        "sessionId": "18",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 19,
+        "elapsedMs": 267,
+        "sessionId": "19",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 20,
+        "elapsedMs": 282,
+        "sessionId": "20",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 21,
+        "elapsedMs": 303,
+        "sessionId": "21",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": true
+      },
+      {
+        "index": 22,
+        "elapsedMs": 254,
+        "sessionId": "22",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 23,
+        "elapsedMs": 300,
+        "sessionId": "23",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 24,
+        "elapsedMs": 296,
+        "sessionId": "24",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 25,
+        "elapsedMs": 334,
+        "sessionId": "25",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 26,
+        "elapsedMs": 255,
+        "sessionId": "26",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 27,
+        "elapsedMs": 294,
+        "sessionId": "27",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 28,
+        "elapsedMs": 249,
+        "sessionId": "28",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": true
+      },
+      {
+        "index": 29,
+        "elapsedMs": 262,
+        "sessionId": "29",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      },
+      {
+        "index": 30,
+        "elapsedMs": 289,
+        "sessionId": "30",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false
+      }
+    ],
+    "slowSession": "30",
+    "ocrReturned": {
+      "ok": false,
+      "error": "Error: {\"type\":\"string\",\"value\":\"未能识别出文字，请尝试扩大选区或手动输入\"}"
+    },
+    "afterOcr": {
+      "main": false,
+      "overlay": true
+    },
+    "ocrTextLength": 0,
+    "afterEsc": {
+      "main": false,
+      "overlay": false
+    },
+    "popupTextBefore": ""
+  },
+  "failure": null,
+  "error": "Error: missing popup; have overlay,main\n    at page (file:///D:/STOR/audit/gray-lifecycle-accept.mjs:113:21)\n    at async failureRecovery (file:///D:/STOR/audit/gray-lifecycle-accept.mjs:317:34)\n    at async file:///D:/STOR/audit/gray-lifecycle-accept.mjs:334:21"
+}

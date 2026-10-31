@@ -1,0 +1,20 @@
+[
+  {
+    "language": "英文",
+    "text": "Read the words on your screen.",
+    "detail": "1 行 · 本地识别 220 ms · 可编辑",
+    "matches": true
+  },
+  {
+    "language": "中文",
+    "text": "框选屏幕上的文字，识别后可以修改。",
+    "detail": "1 行 · 本地识别 156 ms · 可编辑",
+    "matches": true
+  },
+  {
+    "language": "日文",
+    "text": "画面の文字を選択してください。",
+    "detail": "1 行 · 本地识别 151 ms · 可编辑",
+    "matches": true
+  }
+]

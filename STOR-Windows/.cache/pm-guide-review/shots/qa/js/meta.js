@@ -1,0 +1,20 @@
+JSON.stringify({
+  title: document.title,
+  lang: document.documentElement.lang,
+  charset: document.characterSet,
+  viewportMeta: (document.querySelector('meta[name=viewport]')||{}).content || null,
+  favicons: Array.from(document.querySelectorAll('link[rel*=icon]')).map(l => ({rel:l.rel, href:l.href, resolved:l.href})),
+  stylesheets: Array.from(document.querySelectorAll('link[rel=stylesheet]')).map(l=>l.href),
+  scripts: Array.from(document.querySelectorAll('script')).map(s => s.src || '(inline)'),
+  images: Array.from(document.images).map(i=>({src:i.currentSrc||i.src, ok:i.complete&&i.naturalWidth>0, w:i.naturalWidth, h:i.naturalHeight})),
+  headings: Array.from(document.querySelectorAll('h1,h2,h3,h4,h5,h6')).map(h => h.tagName + ' | ' + h.innerText.trim().slice(0,60)),
+  sections: Array.from(document.querySelectorAll('section[id]')).map(s=>s.id),
+  dialogs: Array.from(document.querySelectorAll('dialog')).map(d=>({id:d.id, open:d.open, modal:d.hasAttribute('aria-modal')})),
+  liveRegions: Array.from(document.querySelectorAll('[aria-live],[role=status],[role=alert]')).map(e=>({tag:e.tagName, id:e.id, cls:e.className, live:e.getAttribute('aria-live'), role:e.getAttribute('role')})),
+  bodyFont: getComputedStyle(document.body).fontFamily,
+  h1Size: getComputedStyle(document.querySelector('h1')).fontSize,
+  bodySize: getComputedStyle(document.body).fontSize,
+  bodyColor: getComputedStyle(document.body).color,
+  bodyBg: getComputedStyle(document.body).backgroundColor,
+  skipLinks: Array.from(document.querySelectorAll('a.skip, .skip-link')).map(a=>({text:a.innerText.trim(), href:a.getAttribute('href')}))
+})

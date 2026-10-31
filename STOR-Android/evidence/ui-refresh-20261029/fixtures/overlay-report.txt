@@ -1,0 +1,9 @@
+overlay-idle: 1344x1688; scroll=false
+overlay-running: 1344x1888; scroll=false
+overlay-cancelled: 1344x1888; scroll=false
+overlay-completed: 1344x1888; scroll=false
+overlay-edit-keyboard: 1344x1768; scroll=true
+overlay-long: 1344x2240; scroll=true
+overlay-long-bottom: 1344x2240; scroll=true
+overlay-error-partial: 1344x2180; scroll=false
+PASS: all local overlay states and action callbacks; no network client

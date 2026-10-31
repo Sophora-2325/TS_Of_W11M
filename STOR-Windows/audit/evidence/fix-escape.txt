@@ -1,0 +1,12 @@
+{
+  "configuredHotkey": "Ctrl+Shift+T",
+  "hotkey": {
+    "activeHotkey": "Ctrl+Shift+T",
+    "error": null
+  },
+  "labels": [
+    "overlay",
+    "main"
+  ],
+  "overlayVisible": false
+}

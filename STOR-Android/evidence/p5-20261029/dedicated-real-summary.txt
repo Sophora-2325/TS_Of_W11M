@@ -1,0 +1,1 @@
+PASS: final dedicated signed APK real translation complete; stop successful; same process alive; no crash; service removed

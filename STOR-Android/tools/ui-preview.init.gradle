@@ -1,0 +1,8 @@
+// Opt-in synthetic UI build; release identity and user data remain untouched.
+allprojects {
+    afterEvaluate {
+        if (plugins.hasPlugin('com.android.application')) {
+            android.buildTypes.debug.applicationIdSuffix = '.uipreview'
+        }
+    }
+}

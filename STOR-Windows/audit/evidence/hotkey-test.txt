@@ -1,0 +1,7 @@
+{
+  "afterFailedSave": "NotAValidHotkey",
+  "before": "Ctrl+Shift+T",
+  "originalStillRegistered": false,
+  "restored": "Ctrl+Shift+T",
+  "saveError": "Couldn't recognize \"NotAValidHotkey\" as a valid key for hotkey, if you feel like it should be, please report this to https://github.com/tauri-apps/muda"
+}

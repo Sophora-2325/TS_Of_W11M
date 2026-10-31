@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stor.android.TranslationClientTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-29T05:50:13.239Z" hostname="DESKTOP-EGO8QEJ" time="0.313">
+  <properties/>
+  <testcase name="httpFailuresAreSafeAndNeverRetried" classname="com.stor.android.TranslationClientTest" time="0.219"/>
+  <testcase name="earlyEofAndLengthPreservePartialButFail" classname="com.stor.android.TranslationClientTest" time="0.015"/>
+  <testcase name="doneAndJsonResponsesComplete" classname="com.stor.android.TranslationClientTest" time="0.007"/>
+  <testcase name="settingsValidateOnceAndNormalizeEndpoint" classname="com.stor.android.TranslationClientTest" time="0.002"/>
+  <testcase name="fragmentedUtf8AndStopCompleteWithoutDone" classname="com.stor.android.TranslationClientTest" time="0.029"/>
+  <testcase name="emptyMalformedAndProviderErrorFail" classname="com.stor.android.TranslationClientTest" time="0.031"/>
+  <testcase name="cancellationClosesSocketAndDoesNotRetry" classname="com.stor.android.TranslationClientTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

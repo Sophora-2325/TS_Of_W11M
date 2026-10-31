@@ -1,0 +1,138 @@
+   Compiling stor v0.1.0 (D:\STOR\src-tauri)
+warning: struct `HotkeyState` is never constructed
+  --> src\hotkey.rs:14:12
+   |
+14 | pub struct HotkeyState(pub Mutex<HotkeyStatus>);
+   |            ^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `display_name` is never used
+  --> src\translate\mod.rs:23:12
+   |
+13 | impl Lang {
+   | --------- method in this implementation
+...
+23 |     pub fn display_name(&self) -> &'static str {
+   |            ^^^^^^^^^^^^
+
+warning: struct `ChatResponse` is never constructed
+  --> src\translate\deepseek.rs:30:8
+   |
+30 | struct ChatResponse {
+   |        ^^^^^^^^^^^^
+
+warning: struct `ChatChoice` is never constructed
+  --> src\translate\deepseek.rs:35:8
+   |
+35 | struct ChatChoice {
+   |        ^^^^^^^^^^
+
+warning: struct `ChatMessageResponse` is never constructed
+  --> src\translate\deepseek.rs:40:8
+   |
+40 | struct ChatMessageResponse {
+   |        ^^^^^^^^^^^^^^^^^^^
+
+warning: method `translate` is never used
+   --> src\translate\deepseek.rs:191:18
+    |
+ 78 | impl DeepSeekTranslator {
+    | ----------------------- method in this implementation
+...
+191 |     pub async fn translate(&self, text: &str, target: Lang) -> Result<String, String> {
+    |                  ^^^^^^^^^
+
+warning: `stor` (lib test) generated 6 warnings
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.32s
+     Running unittests src\lib.rs (target\debug\deps\stor_lib-2f7ba4e9a63b330d.exe)
+
+running 15 tests
+
+thread 'translate::deepseek::tests::stream_utf8_invalid_complete_line_is_error' (38252) panicked at src\translate\deepseek.rs:291:44:
+called `Result::unwrap_err()` on an `Ok` value: ["data: �"]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'hotkey::tests::hotkey_startup_invalid_uses_default_without_writing_config' (42360) panicked at src\hotkey.rs:128:9:
+assertion `left == right` failed
+  left: None
+ right: Some("shift+control+KeyT")
+
+thread 'hotkey::tests::hotkey_equivalent_binding_does_not_reregister' (39196) panicked at src\hotkey.rs:107:9:
+assertion failed: registry.calls.is_empty()
+
+thread 'hotkey::tests::hotkey_rollback_failure_is_reported' (40004) panicked at src\hotkey.rs:124:9:
+assertion failed: error.contains("回滚")
+
+thread 'hotkey::tests::hotkey_success_commits_new_binding_and_config' (43580) panicked at src\hotkey.rs:112:67:
+assertion `left == right` failed
+  left: "Ctrl+Shift+Y"
+ right: "shift+control+KeyY"
+
+thread 'hotkey::tests::hotkey_invalid_input_keeps_disk_memory_and_binding' (39404) panicked at src\hotkey.rs:85:51:
+assertion `left == right` failed
+  left: Object {"deepseekModel": String("deepseek-chat"), "defaultTargetLang": String("zh"), "enableTranslationCache": Bool(true), "freezeFrameOnSelect": Bool(true), "hotkey": String("NotAValidHotkey"), "ocrLanguage": String("auto"), "popupOpacity": Number(0.95)}
+ right: Object {"deepseekModel": String("deepseek-chat"), "defaultTargetLang": String("zh"), "enableTranslationCache": Bool(true), "freezeFrameOnSelect": Bool(true), "hotkey": String("Ctrl+Shift+T"), "ocrLanguage": String("auto"), "popupOpacity": Number(0.95)}
+
+thread 'hotkey::tests::hotkey_conflict_keeps_old_binding_and_config' (31760) panicked at src\hotkey.rs:85:51:
+assertion `left == right` failed
+  left: Object {"deepseekModel": String("deepseek-chat"), "defaultTargetLang": String("zh"), "enableTranslationCache": Bool(true), "freezeFrameOnSelect": Bool(true), "hotkey": String("Ctrl+Shift+Y"), "ocrLanguage": String("auto"), "popupOpacity": Number(0.95)}
+ right: Object {"deepseekModel": String("deepseek-chat"), "defaultTargetLang": String("zh"), "enableTranslationCache": Bool(true), "freezeFrameOnSelect": Bool(true), "hotkey": String("Ctrl+Shift+T"), "ocrLanguage": String("auto"), "popupOpacity": Number(0.95)}
+
+thread 'hotkey::tests::hotkey_unregister_failure_rolls_back_disk_and_candidate' (43508) panicked at src\hotkey.rs:85:51:
+assertion `left == right` failed
+  left: Object {"deepseekModel": String("deepseek-chat"), "defaultTargetLang": String("zh"), "enableTranslationCache": Bool(true), "freezeFrameOnSelect": Bool(true), "hotkey": String("Ctrl+Shift+Y"), "ocrLanguage": String("auto"), "popupOpacity": Number(0.95)}
+ right: Object {"deepseekModel": String("deepseek-chat"), "defaultTargetLang": String("zh"), "enableTranslationCache": Bool(true), "freezeFrameOnSelect": Bool(true), "hotkey": String("Ctrl+Shift+T"), "ocrLanguage": String("auto"), "popupOpacity": Number(0.95)}
+
+thread 'translate::deepseek::tests::stream_utf8_every_byte_boundary_preserves_chinese_and_japanese' (24700) panicked at src\translate\deepseek.rs:278:13:
+assertion `left == right` failed: byte split 40
+  left: "data: {\"choices\":[{\"delta\":{\"content\":\"���好、冒険者\"}}]}"
+ right: "data: {\"choices\":[{\"delta\":{\"content\":\"你好、冒険者\"}}]}"
+
+thread 'translate::deepseek::tests::stream_utf8_incomplete_character_at_eof_is_error' (39024) panicked at src\translate\deepseek.rs:288:52:
+called `Result::unwrap_err()` on an `Ok` value: []
+
+thread 'hotkey::tests::hotkey_startup_conflict_uses_default' (36868) panicked at src\hotkey.rs:132:68:
+assertion `left == right` failed
+  left: None
+ right: Some("shift+control+KeyT")
+
+thread 'translate::deepseek::tests::stream_utf8_one_byte_chunks_keep_json_and_newlines' (40512) panicked at src\translate\deepseek.rs:284:9:
+assertion `left == right` failed
+  left: ["data: {\"choices\":[{\"delta\":{\"content\":\"������������������\"}}]}", ""]
+ right: ["data: {\"choices\":[{\"delta\":{\"content\":\"中文と日本語\"}}]}", ""]
+test hotkey::tests::hotkey_startup_default_conflict_remains_usable_without_binding ... ok
+test hotkey::tests::hotkey_write_failure_removes_candidate_and_keeps_old ... ok
+test translate::deepseek::tests::stream_utf8_complete_text_and_multiple_events ... ok
+test hotkey::tests::hotkey_startup_invalid_uses_default_without_writing_config ... FAILED
+test hotkey::tests::hotkey_equivalent_binding_does_not_reregister ... FAILED
+test translate::deepseek::tests::stream_utf8_invalid_complete_line_is_error ... FAILED
+test hotkey::tests::hotkey_rollback_failure_is_reported ... FAILED
+test hotkey::tests::hotkey_success_commits_new_binding_and_config ... FAILED
+test hotkey::tests::hotkey_invalid_input_keeps_disk_memory_and_binding ... FAILED
+test hotkey::tests::hotkey_conflict_keeps_old_binding_and_config ... FAILED
+test hotkey::tests::hotkey_unregister_failure_rolls_back_disk_and_candidate ... FAILED
+test translate::deepseek::tests::stream_utf8_every_byte_boundary_preserves_chinese_and_japanese ... FAILED
+test translate::deepseek::tests::stream_utf8_incomplete_character_at_eof_is_error ... FAILED
+test hotkey::tests::hotkey_startup_conflict_uses_default ... FAILED
+test translate::deepseek::tests::stream_utf8_one_byte_chunks_keep_json_and_newlines ... FAILED
+
+failures:
+
+failures:
+    hotkey::tests::hotkey_conflict_keeps_old_binding_and_config
+    hotkey::tests::hotkey_equivalent_binding_does_not_reregister
+    hotkey::tests::hotkey_invalid_input_keeps_disk_memory_and_binding
+    hotkey::tests::hotkey_rollback_failure_is_reported
+    hotkey::tests::hotkey_startup_conflict_uses_default
+    hotkey::tests::hotkey_startup_invalid_uses_default_without_writing_config
+    hotkey::tests::hotkey_success_commits_new_binding_and_config
+    hotkey::tests::hotkey_unregister_failure_rolls_back_disk_and_candidate
+    translate::deepseek::tests::stream_utf8_every_byte_boundary_preserves_chinese_and_japanese
+    translate::deepseek::tests::stream_utf8_incomplete_character_at_eof_is_error
+    translate::deepseek::tests::stream_utf8_invalid_complete_line_is_error
+    translate::deepseek::tests::stream_utf8_one_byte_chunks_keep_json_and_newlines
+
+test result: FAILED. 3 passed; 12 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--lib`

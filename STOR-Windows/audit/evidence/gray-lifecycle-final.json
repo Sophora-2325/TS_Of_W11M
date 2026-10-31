@@ -1,0 +1,707 @@
+{
+  "cold": [
+    {
+      "index": 1,
+      "pid": 27452,
+      "elapsedMs": 779,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 2,
+      "pid": 42528,
+      "elapsedMs": 306,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "overlay": true,
+        "main": false
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 3,
+      "pid": 18512,
+      "elapsedMs": 317,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 4,
+      "pid": 42848,
+      "elapsedMs": 318,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 5,
+      "pid": 10876,
+      "elapsedMs": 370,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "overlay": true,
+        "main": false
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 6,
+      "pid": 34616,
+      "elapsedMs": 306,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 7,
+      "pid": 42924,
+      "elapsedMs": 314,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 8,
+      "pid": 43144,
+      "elapsedMs": 324,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 9,
+      "pid": 42444,
+      "elapsedMs": 328,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 10,
+      "pid": 21948,
+      "elapsedMs": 324,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "overlay": true,
+        "main": false
+      },
+      "phases": [
+        "begin",
+        "geometry",
+        "hide-overlay",
+        "hide-popup",
+        "composition-flush",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    }
+  ],
+  "continuous": {
+    "pid": 22988,
+    "rounds": [
+      {
+        "index": 1,
+        "elapsedMs": 315,
+        "sessionId": "1",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 2,
+        "elapsedMs": 427,
+        "sessionId": "2",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 3,
+        "elapsedMs": 403,
+        "sessionId": "3",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 4,
+        "elapsedMs": 466,
+        "sessionId": "4",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 5,
+        "elapsedMs": 395,
+        "sessionId": "5",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 6,
+        "elapsedMs": 377,
+        "sessionId": "6",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 7,
+        "elapsedMs": 386,
+        "sessionId": "7",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": true,
+        "encoded": "session=7 phase=encoded elapsed_ms=170 width=2560 height=1600 bytes=399404 rgb_spread=255 alpha_zero_pct=0 error=-"
+      },
+      {
+        "index": 8,
+        "elapsedMs": 396,
+        "sessionId": "8",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 9,
+        "elapsedMs": 435,
+        "sessionId": "9",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 10,
+        "elapsedMs": 388,
+        "sessionId": "10",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 11,
+        "elapsedMs": 381,
+        "sessionId": "11",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 12,
+        "elapsedMs": 391,
+        "sessionId": "12",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 13,
+        "elapsedMs": 519,
+        "sessionId": "13",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 14,
+        "elapsedMs": 513,
+        "sessionId": "14",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": true,
+        "encoded": "session=14 phase=encoded elapsed_ms=190 width=2560 height=1600 bytes=345973 rgb_spread=255 alpha_zero_pct=0 error=-"
+      },
+      {
+        "index": 15,
+        "elapsedMs": 446,
+        "sessionId": "15",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 16,
+        "elapsedMs": 465,
+        "sessionId": "16",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 17,
+        "elapsedMs": 463,
+        "sessionId": "17",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 18,
+        "elapsedMs": 426,
+        "sessionId": "18",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 19,
+        "elapsedMs": 396,
+        "sessionId": "19",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 20,
+        "elapsedMs": 486,
+        "sessionId": "20",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 21,
+        "elapsedMs": 484,
+        "sessionId": "21",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": true,
+        "encoded": "session=21 phase=encoded elapsed_ms=169 width=2560 height=1600 bytes=370012 rgb_spread=255 alpha_zero_pct=0 error=-"
+      },
+      {
+        "index": 22,
+        "elapsedMs": 443,
+        "sessionId": "22",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 23,
+        "elapsedMs": 480,
+        "sessionId": "23",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 24,
+        "elapsedMs": 510,
+        "sessionId": "24",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 25,
+        "elapsedMs": 450,
+        "sessionId": "25",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 26,
+        "elapsedMs": 505,
+        "sessionId": "26",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 27,
+        "elapsedMs": 447,
+        "sessionId": "27",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 28,
+        "elapsedMs": 509,
+        "sessionId": "28",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": true,
+        "encoded": "session=28 phase=encoded elapsed_ms=198 width=2560 height=1600 bytes=404486 rgb_spread=255 alpha_zero_pct=0 error=-"
+      },
+      {
+        "index": 29,
+        "elapsedMs": 442,
+        "sessionId": "29",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": null
+      },
+      {
+        "index": 30,
+        "elapsedMs": 532,
+        "sessionId": "30",
+        "gate": "loaded",
+        "width": 2560,
+        "height": 1600,
+        "rapid": false,
+        "encoded": "session=30 phase=encoded elapsed_ms=168 width=2560 height=1600 bytes=403468 rgb_spread=255 alpha_zero_pct=0 error=-"
+      }
+    ],
+    "slowSession": "30",
+    "ocrReturned": {
+      "ok": true,
+      "value": null
+    },
+    "afterOcr": {
+      "overlay": false,
+      "main": false,
+      "popup": true
+    },
+    "ocrTextLength": 37,
+    "afterEsc": {
+      "overlay": false,
+      "main": false
+    },
+    "popupTextBefore": ""
+  },
+  "failure": {
+    "patched": true,
+    "typed": "生命周期验收原文",
+    "reopenResult": {
+      "ok": false,
+      "error": "Error: cdp evaluate timed out"
+    },
+    "visible": {
+      "overlay": true,
+      "main": false
+    },
+    "popup": null,
+    "popupError": "missing popup; have overlay,main",
+    "labels": [
+      "overlay",
+      "main"
+    ],
+    "prepare": null,
+    "trace": [
+      "session=1 phase=begin elapsed_ms=0 width=2560 height=1600 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=geometry elapsed_ms=2 width=2560 height=1600 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=hide-overlay elapsed_ms=2 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=hide-popup elapsed_ms=8 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=composition-flush elapsed_ms=16 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=encoded elapsed_ms=109 width=2560 height=1600 bytes=412184 rgb_spread=255 alpha_zero_pct=0 error=-",
+      "session=1 phase=published elapsed_ms=189 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=frontend-ready elapsed_ms=225 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=image-ok elapsed_ms=249 width=0 height=0 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-",
+      "session=1 phase=shown elapsed_ms=249 width=2560 height=1600 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-"
+    ]
+  },
+  "error": null
+}

@@ -1,0 +1,8 @@
+tech base {"innerWidth":1440,"innerHeight":1000,"scrollWidth":1440,"bodyWidth":1440,"scrollHeight":12137}
+tech overflow []
+tech quiz {"score":"已答 1 / 5，答对 1","feedback":"答对了。\n\n技术栈方案明确先验证跨应用取图是否顺手，以及现有模型在手机上的完整识","disabled":4}
+tech exceptions []
+plan base {"innerWidth":1440,"innerHeight":1000,"scrollWidth":1440,"bodyWidth":1440,"scrollHeight":10995}
+plan overflow []
+plan quiz {"score":"已答 1 / 5，答对 1","feedback":"答对了。\n\n文中明确优先保证 P1 和 P2 的证据；不要先完成全部视觉界面，再","disabled":4}
+plan exceptions []

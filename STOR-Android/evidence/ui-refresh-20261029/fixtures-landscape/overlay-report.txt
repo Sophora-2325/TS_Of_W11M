@@ -1,0 +1,4 @@
+overlay-idle: 2240x1120; scroll=true
+overlay-completed: 2240x1120; scroll=true
+overlay-long: 2240x1120; scroll=true
+PASS: constrained-height preview; no network client

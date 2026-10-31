@@ -1,0 +1,21 @@
+=== product-manager-guide.html
+title: Android 屏幕翻译 · 产品经理讲解书（学习版）
+lang=zh-CN viewport=True ids=49 dup=none
+tables=1 rows=[8] quizzes=1
+broken anchors=none bad labelledby=none missing local files=none
+local links=['implementation-plan.html', 'implementation-plan.md', 'product-manager-guide.html', 'product-manager-guide.md', 'technical-stack.html']
+external css/import=False
+=== technical-stack.html
+title: Android 屏幕翻译 · 技术栈方案（学习版）
+lang=zh-CN viewport=True ids=26 dup=none
+tables=4 rows=[15, 4, 3, 5] quizzes=1
+broken anchors=none bad labelledby=none missing local files=none
+local links=['implementation-plan.html', 'product-manager-guide.html', 'technical-stack.html', 'technical-stack.md']
+external css/import=False
+=== implementation-plan.html
+title: Android 屏幕翻译 · 开发计划与验收（学习版）
+lang=zh-CN viewport=True ids=27 dup=none
+tables=2 rows=[13, 8] quizzes=1
+broken anchors=none bad labelledby=none missing local files=none
+local links=['implementation-plan.html', 'implementation-plan.md', 'product-manager-guide.html', 'technical-stack.html']
+external css/import=False

@@ -1,0 +1,4 @@
+settings-keyboard saveBounds=[576,1580][864,1685]; scrollableNodes=1
+settings-landscape saveBounds=[1493,1164][1781,1269]; scrollableNodes=1
+settings-font-1_5 saveBounds=[536,2289][904,2422]; scrollableNodes=0
+settings-light saveBounds=[576,2010][864,2115]; scrollableNodes=0

@@ -1,0 +1,3 @@
+PASS: saved settings loaded; key remains masked
+PASS: minified ORT/OpenCV OCR text matches English reference
+PASS: minified session stops; no crash for this process

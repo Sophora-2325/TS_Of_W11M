@@ -1,0 +1,1 @@
+import"./_virtual_wxt-html-plugins-CHBKUeji.js";import{c as t,n as a,r as c}from"./auth-sso-DNW32sFK.js";!async function(){try{await c(new a).init()}catch(i){}t("authSignOut").catch(t=>{});try{window.close()}catch{}}();

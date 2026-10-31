@@ -1,0 +1,16 @@
+2026-10-28 07:22:04.429: [INFO] CurrentProfilePath: D:\STOR\.cache\edge-printcheck\Default
+2026-10-28 07:22:04.429: [INFO] Profiles total count: 1
+2026-10-28 07:22:04.429: [INFO] Profile: name=用户配置 1 path=D:\STOR\.cache\edge-printcheck\Default lastActive=null
+2026-10-28 07:22:04.429: [INFO] LastUsedProfileDir: D:\STOR\.cache\edge-printcheck\Default
+2026-10-28 07:22:04.429: [INFO] VisibilityChanged: 0
+2026-10-28 07:22:04.441: [INFO] OnDoneLoading sync enabled: 0
+2026-10-28 07:22:04.441: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-28 07:22:04.441: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-28 07:22:04.441: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-28 07:22:04.481: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-28 07:22:04.880: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 0
+2026-10-28 07:22:04.882: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:22:04.883: [INFO] Primary account changed.
+2026-10-28 07:22:04.883: [INFO] OnPrimaryAccountChanged PrimaryAccountChangeEvent::Type::kSet
+2026-10-28 07:22:04.887: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3
+2026-10-28 07:22:04.894: [INFO] RecordSyncInitDuration has_sync_been_enabled: 0 state: 3

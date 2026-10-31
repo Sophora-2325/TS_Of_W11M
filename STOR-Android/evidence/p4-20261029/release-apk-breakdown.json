@@ -1,0 +1,22 @@
+[
+  {
+    "Group": "dex",
+    "StoredBytes": 24376628.0,
+    "RawBytes": 24376628.0
+  },
+  {
+    "Group": "models",
+    "StoredBytes": 31141813.0,
+    "RawBytes": 31299895.0
+  },
+  {
+    "Group": "native",
+    "StoredBytes": 59075936.0,
+    "RawBytes": 59075936.0
+  },
+  {
+    "Group": "other",
+    "StoredBytes": 569550.0,
+    "RawBytes": 667322.0
+  }
+]

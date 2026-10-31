@@ -1,0 +1,13 @@
+{
+  "capture": [
+    "session=1 phase=ocr-capture elapsed_ms=52367 width=975 height=272 bytes=43909 rgb_spread=0 alpha_zero_pct=0 error=-",
+    "session=1 phase=ocr-done elapsed_ms=52549 width=975 height=272 bytes=0 rgb_spread=0 alpha_zero_pct=0 error=-"
+  ],
+  "exactMatch": true,
+  "model": {
+    "error": null,
+    "model": "PP-OCRv6 small",
+    "state": "ready"
+  },
+  "translationTriggered": false
+}

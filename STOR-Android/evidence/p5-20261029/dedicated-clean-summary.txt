@@ -1,0 +1,1 @@
+PASS: dedicated signed APK clean install; model ready; OCR matches; session stops; no crash for tested PID

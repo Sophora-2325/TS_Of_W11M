@@ -1,0 +1,33 @@
+{
+  "cold": [],
+  "continuous": {
+    "luma": [
+      {
+        "index": 1,
+        "file": "D:\\STOR\\audit\\evidence\\gray-lifecycle-luma-1.png",
+        "trace": [
+          "session=1 phase=encoded elapsed_ms=102 width=2560 height=1600 bytes=274767 rgb_spread=255 alpha_zero_pct=0 error=-"
+        ]
+      },
+      {
+        "index": 2,
+        "file": "D:\\STOR\\audit\\evidence\\gray-lifecycle-luma-2.png",
+        "trace": [
+          "session=1 phase=encoded elapsed_ms=102 width=2560 height=1600 bytes=274767 rgb_spread=255 alpha_zero_pct=0 error=-",
+          "session=2 phase=encoded elapsed_ms=95 width=2560 height=1600 bytes=253262 rgb_spread=255 alpha_zero_pct=0 error=-"
+        ]
+      },
+      {
+        "index": 3,
+        "file": "D:\\STOR\\audit\\evidence\\gray-lifecycle-luma-3.png",
+        "trace": [
+          "session=1 phase=encoded elapsed_ms=102 width=2560 height=1600 bytes=274767 rgb_spread=255 alpha_zero_pct=0 error=-",
+          "session=2 phase=encoded elapsed_ms=95 width=2560 height=1600 bytes=253262 rgb_spread=255 alpha_zero_pct=0 error=-",
+          "session=3 phase=encoded elapsed_ms=93 width=2560 height=1600 bytes=293924 rgb_spread=255 alpha_zero_pct=0 error=-"
+        ]
+      }
+    ]
+  },
+  "failure": null,
+  "error": null
+}

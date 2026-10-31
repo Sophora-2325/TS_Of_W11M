@@ -1,0 +1,7 @@
+{
+  "labels": [
+    "overlay",
+    "main"
+  ],
+  "overlayVisible": false
+}

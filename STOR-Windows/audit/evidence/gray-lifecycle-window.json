@@ -1,0 +1,357 @@
+{
+  "cold": [
+    {
+      "index": 1,
+      "pid": 34984,
+      "elapsedMs": 766,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 2,
+      "pid": 42992,
+      "elapsedMs": 187,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 3,
+      "pid": 43148,
+      "elapsedMs": 202,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "overlay": true,
+        "main": false
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 4,
+      "pid": 39428,
+      "elapsedMs": 212,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "overlay": true,
+        "main": false
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 5,
+      "pid": 42892,
+      "elapsedMs": 210,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "overlay": true,
+        "main": false
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 6,
+      "pid": 44484,
+      "elapsedMs": 220,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "overlay": true,
+        "main": false
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 7,
+      "pid": 38680,
+      "elapsedMs": 206,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 8,
+      "pid": 36016,
+      "elapsedMs": 206,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "main": false,
+        "overlay": true
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 9,
+      "pid": 42588,
+      "elapsedMs": 214,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "overlay": true,
+        "main": false
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    },
+    {
+      "index": 10,
+      "pid": 35728,
+      "elapsedMs": 208,
+      "decode": {
+        "ok": true,
+        "width": 1
+      },
+      "view": {
+        "sessionId": "1",
+        "gate": "loaded",
+        "mode": "freeze",
+        "complete": true,
+        "width": 2560,
+        "height": 1600,
+        "hint": "拖选要翻译的区域 · Esc 取消"
+      },
+      "visible": {
+        "overlay": true,
+        "main": false
+      },
+      "phases": [
+        "begin",
+        "hide-overlay",
+        "composition-flush",
+        "hide-popup",
+        "geometry",
+        "encoded",
+        "published",
+        "frontend-ready",
+        "image-ok",
+        "shown"
+      ],
+      "flat": false
+    }
+  ],
+  "continuous": null,
+  "failure": null,
+  "error": "Error: {\"type\":\"string\",\"value\":\"未能识别出文字，请尝试扩大选区或手动输入\"}\n    at evaluate (file:///D:/STOR/audit/gray-lifecycle-accept.mjs:88:13)\n    at async continuous (file:///D:/STOR/audit/gray-lifecycle-accept.mjs:246:17)\n    at async file:///D:/STOR/audit/gray-lifecycle-accept.mjs:314:24"
+}

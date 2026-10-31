@@ -1,0 +1,32 @@
+--------- beginning of crash
+05-29 03:40:36.619  1193  1193 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 1193 (init), pid 1193 (init)
+05-29 03:40:36.626  1193  1193 F libc    : Crash due to signal: crash_dump helper failed to exec, or was killed
+10-29 05:00:24.545  6813  6813 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 6813 (init), pid 6813 (init)
+10-29 05:00:24.606  6813  6813 F libc    : Crash due to signal: crash_dump helper failed to exec, or was killed
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: FATAL EXCEPTION: main
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: Process: com.stor.android, PID: 17236
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: java.lang.RuntimeException: Unable to stop service com.stor.android.capture.CaptureSessionService@6dac9fa: android.os.NetworkOnMainThreadException
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at android.app.ActivityThread.handleStopService(ActivityThread.java:5959)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at android.app.ActivityThread.-$$Nest$mhandleStopService(Unknown Source:0)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2956)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:116)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:306)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:416)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10001)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:613)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1074)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: Caused by: android.os.NetworkOnMainThreadException
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onNetwork(StrictMode.java:1838)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at com.android.org.conscrypt.Platform.blockGuardOnNetwork(Platform.java:433)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at com.android.org.conscrypt.ConscryptEngineSocket$SSLOutputStream.writeInternal(ConscryptEngineSocket.java:712)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at com.android.org.conscrypt.ConscryptEngineSocket$SSLOutputStream.-$$Nest$mwriteInternal(Unknown Source:0)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at com.android.org.conscrypt.ConscryptEngineSocket.drainOutgoingQueue(ConscryptEngineSocket.java:640)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at com.android.org.conscrypt.ConscryptEngineSocket.close(ConscryptEngineSocket.java:547)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at okhttp3.internal.Util.closeQuietly(Util.kt:505)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at okhttp3.internal.connection.RealConnectionPool.evictAll(RealConnectionPool.kt:132)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at okhttp3.ConnectionPool.evictAll(ConnectionPool.kt:57)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at com.stor.android.translate.TranslationClient.close(TranslationClient.kt:139)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at com.stor.android.capture.CaptureSessionService.onDestroy(CaptureSessionService.kt:320)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	at android.app.ActivityThread.handleStopService(ActivityThread.java:5934)
+10-29 14:12:41.536 17236 17236 E AndroidRuntime: 	... 9 more

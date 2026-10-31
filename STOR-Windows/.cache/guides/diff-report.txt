@@ -1,0 +1,50 @@
+=== tech L3 found=False
+SRC: 版本：2026-10-27。状态：方案，尚未建立Android工程或进行真机验证。
+longest prefix 2: 版本
+next source fragment: ：2026-10-27。状态：方案，尚未建立Android工程或进行真机验证。
+html around: NOT FOUND
+=== tech L5 found=False
+SRC: 本方案对应需求：通用Android版、轻便流畅、本地高精度OCR、退到后台后使用侧边悬浮键、点击后在截图上手动框选。首版默认支持英日译中，同时验证中英日OCR；不把通用版理解为所有手机和所有应用均可用。
+longest prefix 1: 本
+next source fragment: 方案对应需求：通用Android版、轻便流畅、本地高精度OCR、退到后台后使用侧边悬浮键、点击后在截图上手动框选。首版默
+html around: NOT FOUND
+=== tech L76 found=False
+SRC: 部分应用用FLAG_SECURE阻止截图，或禁止第三方悬浮层；此时可能黑屏或看不到浮键，应提示限制，不尝试绕过。截图冻结也不会暂停底下的游戏。安全窗口说明、隐藏悬浮窗API)
+longest prefix 86: 部分应用用FLAG_SECURE阻止截图，或禁止第三方悬浮层；此时可能黑屏或看不到浮键，应提示限制，不尝试绕过。截图冻结也不会暂停底下的游戏。安全窗口说明、隐藏悬浮窗API
+next source fragment: )
+html around: NOT FOUND
+=== tech L93 found=False
+SRC: 可以复用：模型、字典、官方配置、版本与哈希、截图样本、期望文字、翻译提示词和请求语义。
+longest prefix 4: 可以复用
+next source fragment: ：模型、字典、官方配置、版本与哈希、截图样本、期望文字、翻译提示词和请求语义。
+html around: NOT FOUND
+=== tech L95 found=False
+SRC: 需要重新实现或适配：Android取图与颜色转换、tensor前处理、DB检测后处理、框扩张、透视裁剪、识别resize/padding、CTC解码、文字排序及模型生命周期。OpenCV可承担轮廓和透视计算，DB框扩张的具体库需在OCR原型中以一致性样本选定并锁版；不把它误当作OpenCV自动提供的完整OCR。
+longest prefix 9: 需要重新实现或适配
+next source fragment: ：Android取图与颜色转换、tensor前处理、DB检测后处理、框扩张、透视裁剪、识别resize/padding、
+html around: NOT FOUND
+=== tech L118 found=False
+SRC: MainActivity：首页、设置、授权流程。
+longest prefix 12: MainActivity
+next source fragment: ：首页、设置、授权流程。
+html around: NOT FOUND
+=== tech L149 found=False
+SRC: 已核对：现有STOR模型及流水线、模型文件大小、官方ONNX与AndroidRuntime路线、系统授权/前台服务/悬浮窗约束。
+longest prefix 3: 已核对
+next source fragment: ：现有STOR模型及流水线、模型文件大小、官方ONNX与AndroidRuntime路线、系统授权/前台服务/悬浮窗约束
+html around: NOT FOUND
+=== plan L3 found=False
+SRC: 版本：2026-10-27。状态：计划交付完成，Android应用尚未开发。
+longest prefix 2: 版本
+next source fragment: ：2026-10-27。状态：计划交付完成，Android应用尚未开发。
+html around: NOT FOUND
+=== plan L5 found=False
+SRC: 配套：技术栈方案、产品经理讲解书。
+longest prefix 3: 配套：
+next source fragment: 技术栈方案、产品经理讲解书。
+html around: NOT FOUND
+=== plan L129 found=False
+SRC: 优化顺序：找慢阶段→减少无用图片复制和主线程工作→调整线程/输入尺寸→测R8与BaselineProfiles→仅在仍有问题时评估XNNPACK或Runtime裁剪。每次优化同时回测OCR输出，避免速度提升却丢字。
+longest prefix 4: 优化顺序
+next source fragment: ：找慢阶段→减少无用图片复制和主线程工作→调整线程/输入尺寸→测R8与BaselineProfiles→仅在仍有问题时评
+html around: NOT FOUND

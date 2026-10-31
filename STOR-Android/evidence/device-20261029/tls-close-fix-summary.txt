@@ -1,0 +1,1 @@
+PASS: real HTTPS translation then service stop; process 18581 remained alive; no crash for this PID; service removed

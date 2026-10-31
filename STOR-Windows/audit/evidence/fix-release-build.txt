@@ -1,0 +1,61 @@
+
+> stor@0.1.0 tauri
+> tauri build --no-bundle -- --offline
+
+        Info Looking up installed tauri packages to check mismatched versions...
+     Running beforeBuildCommand `npm run build`
+
+> stor@0.1.0 build
+> tsc && vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 39 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.30 kB
+dist/assets/index-wtmUt_Wj.css    4.72 kB │ gzip:  1.44 kB
+dist/assets/index-B60k8PmS.js   221.55 kB │ gzip: 68.60 kB
+✓ built in 522ms
+   Compiling stor v0.1.0 (D:\STOR\src-tauri)
+warning: method `display_name` is never used
+  --> src\translate\mod.rs:23:12
+   |
+13 | impl Lang {
+   | --------- method in this implementation
+...
+23 |     pub fn display_name(&self) -> &'static str {
+   |            ^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: struct `ChatResponse` is never constructed
+  --> src\translate\deepseek.rs:30:8
+   |
+30 | struct ChatResponse {
+   |        ^^^^^^^^^^^^
+
+warning: struct `ChatChoice` is never constructed
+  --> src\translate\deepseek.rs:35:8
+   |
+35 | struct ChatChoice {
+   |        ^^^^^^^^^^
+
+warning: struct `ChatMessageResponse` is never constructed
+  --> src\translate\deepseek.rs:40:8
+   |
+40 | struct ChatMessageResponse {
+   |        ^^^^^^^^^^^^^^^^^^^
+
+warning: method `translate` is never used
+   --> src\translate\deepseek.rs:200:18
+    |
+ 87 | impl DeepSeekTranslator {
+    | ----------------------- method in this implementation
+...
+200 |     pub async fn translate(&self, text: &str, target: Lang) -> Result<String, String> {
+    |                  ^^^^^^^^^
+
+warning: `stor` (lib) generated 5 warnings
+    Finished `release` profile [optimized] target(s) in 25.79s
+       Built application at: D:\STOR\src-tauri\target\release\stor.exe

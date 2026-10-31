@@ -1,0 +1,28 @@
+{
+  "engine": {
+    "id": "b11669-vulkan-x64",
+    "name": "llama.cpp b11669 · Windows x64 Vulkan",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11669/llama-b11669-bin-win-vulkan-x64.zip",
+    "size": 32182350,
+    "sha256": "2c07574e7bde71321cb785282b20cc821e951132149eeceeea32ddebdbf0598e",
+    "executable": "llama-server.exe"
+  },
+  "models": [
+    {
+      "id": "hy-mt2-q8",
+      "name": "Hy-MT2 1.8B · Q8_0（翻译专用）",
+      "fileName": "Hy-MT2-1.8B-Q8_0.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/a0c709d9fac510f2c807aa3af52872340dc37a4a/Hy-MT2-1.8B-Q8_0.gguf",
+      "size": 1908528192,
+      "sha256": "5c3fe0b1408a5ceb0143184ef247b11b579c525f4b02b060e6c851bb76fef1a4"
+    },
+    {
+      "id": "hy-mt2-q4",
+      "name": "Hy-MT2 1.8B · Q4_K_M（较小，翻译专用）",
+      "fileName": "Hy-MT2-1.8B-Q4_K_M.gguf",
+      "url": "https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF/resolve/a0c709d9fac510f2c807aa3af52872340dc37a4a/Hy-MT2-1.8B-Q4_K_M.gguf",
+      "size": 1133080448,
+      "sha256": "dc5f44fcf1fa496ee7ad725982c0c8c553a4de00259b53af84c4b89fb0c06699"
+    }
+  ]
+}

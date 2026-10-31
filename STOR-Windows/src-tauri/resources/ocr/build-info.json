@@ -1,0 +1,8 @@
+{
+    "sources":  {
+                    "worker.py":  "9c19971bac3f13161e346db945189fc99a462e02ef4ff14bda3fab920b573d39",
+                    "requirements.lock":  "b1a21b92f88c91b2c211daae0d101da56dd7da7d2b8594e7d9c4ce9af6759463",
+                    "stor-ocr.spec":  "3833afc801d9ed2791699b8a98ef98f11bf6e58a2725fd704861d520934c92f4",
+                    "model-sources.json":  "1a7e64fc42d84df3db14533ad3325136c2a74410a246bb9310b7f03774a0e3b9"
+                }
+}

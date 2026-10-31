@@ -1,0 +1,110 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "icon/logo-16.png",
+         "32": "icon/logo-32.png",
+         "48": "icon/logo-48.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "迅雷下载支持"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "content-scripts/multi-select.css" ],
+      "js": [ "content-scripts/ball.js", "content-scripts/install-thunder-prompt.js", "content-scripts/link-badge.js", "content-scripts/multi-select.js", "content-scripts/native-download-error.js", "content-scripts/online-video-fluent-play.js", "content-scripts/page-toast.js", "content-scripts/rate-us.js", "content-scripts/source-list.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": false,
+      "js": [ "content-scripts/big-model.js" ],
+      "matches": [ "https://hf-mirror.com/*", "https://huggingface.co/*", "https://modelscope.cn/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": true,
+      "js": [ "content-scripts/online-video-overlay.js", "content-scripts/online-video-sniff.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   }, {
+      "all_frames": true,
+      "js": [ "content-scripts/sniff.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "content-scripts/takeover-toast.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+   },
+   "default_locale": "zh_CN",
+   "description": "迅雷下载支持",
+   "host_permissions": [ "http://*/*", "https://*/*" ],
+   "icons": {
+      "16": "icon/logo-16.png",
+      "32": "icon/logo-32.png",
+      "48": "icon/logo-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDEa5DG04lhgzzm3gRSXPPOZOv6ZXnzQrBv+rjUE/dL5br9Duh1kbwGQJCO4QMDvD1usf6FoXDsuvZwYzH6lg1pLI7m/wmQC3NQURHQ7J5zAy7VY0F7qSVqclcpRKY2k00vcqxok6lota3Z1QxUVUwWc9VUfr4gRUeQa4KlEsXzGwIDAQAB",
+   "manifest_version": 3,
+   "name": "迅雷下载支持",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "contextMenus", "cookies", "downloads", "nativeMessaging", "storage", "tabs", "webRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.1.4",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "get-video-src.js", "video-src-sniff.js", "login-success.html", "logout-success.html" ]
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/ball.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "https://hf-mirror.com/*", "https://huggingface.co/*", "https://modelscope.cn/*" ],
+      "resources": [ "content-scripts/big-model.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/install-thunder-prompt.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/link-badge.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/native-download-error.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/online-video-overlay.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/online-video-fluent-play.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/page-toast.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/rate-us.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/source-list.css" ],
+      "use_dynamic_url": true
+   }, {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "resources": [ "content-scripts/takeover-toast.css" ],
+      "use_dynamic_url": true
+   } ]
+}

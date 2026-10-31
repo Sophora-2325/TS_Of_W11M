@@ -1,0 +1,39 @@
+---- TIME 2026/10/29 14:21:50 ----
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  Destroying services:
+  * Destroy ServiceRecord{3e53297 u0 com.stor.android/.capture.CaptureSessionService c:com.stor.android}
+    intent={act=com.stor.android.START cmp=com.stor.android/.capture.CaptureSessionService mCallingUid=10385}
+    packageName=com.stor.android
+    processName=com.stor.android
+    targetSdkVersion=36
+    baseDir=/data/app/~~x4stimAGtSU1EX0w2E_pgw==/com.stor.android-TmV31id15l6YDGdg1gqPyg==/base.apk
+    dataDir=/data/user/0/com.stor.android
+    app=ProcessRecord{901998c 9502:com.stor.android/u0a385}
+    useNewWiuLogic_forCapabilities()=true
+    useNewWiuLogic_forStart()=true
+    useNewBfslLogic()=true
+    mAllowWiu_noBinding=DENIED
+    mAllowWiu_inBindService=DENIED
+    mAllowWiu_byBindings=DENIED
+    getFgsAllowWiu_legacy=DENIED
+    getFgsAllowWiu_new=DENIED
+    getFgsAllowWiu_forStart=DENIED
+    getFgsAllowWiu_forCapabilities=DENIED
+    allowUiJobScheduling=false
+    recentCallingPackage=com.stor.android
+    recentCallingUid=10385
+    mAllowStart_noBinding=DENIED
+    mAllowStart_inBindService=DENIED
+    mAllowStart_byBindings=DENIED
+    getFgsAllowStart_legacy=DENIED
+    getFgsAllowStart_new=DENIED
+    getFgsAllowStart=DENIED
+    startForegroundCount=1
+    infoAllowStartForeground=null
+    createTime=-2s668ms startingBgTimeout=--
+    lastActivity=-2s668ms restartTime=-- createdFromFg=true
+    startRequested=false delayedStop=false stopIfKilled=true callStart=false lastStartId=1
+ startCommandResult=2
+    executeNesting=1 executeFg=false executingStart=-54ms
+    destroying=true destroyTime=-57ms
+    restartReschedulingCount=0, RestartSceneMask=0, Flag = 0x0

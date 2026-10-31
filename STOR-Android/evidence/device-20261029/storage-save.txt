@@ -1,0 +1,8 @@
+
+com.stor.android.TranslationStorageTest:.
+
+Time: 0.068
+
+OK (1 test)
+
+

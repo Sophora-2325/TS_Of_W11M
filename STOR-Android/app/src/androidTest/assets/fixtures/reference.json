@@ -1,0 +1,23 @@
+[
+  {
+    "file": "en.png",
+    "language": "en",
+    "expected": "Read the words on your screen.",
+    "desktop": "Read the words on your screen.",
+    "sha256": "579ac88f068f83691cc89ebad158f50c828e6e9b7d8c93f3657368455b32f245"
+  },
+  {
+    "file": "zh.png",
+    "language": "zh",
+    "expected": "框选屏幕上的文字，识别后可以修改。",
+    "desktop": "框选屏幕上的文字，识别后可以修改。",
+    "sha256": "4900262274076159a35f0e2ee745fcb0cbe42e798a4966ff266e901173f438db"
+  },
+  {
+    "file": "ja.png",
+    "language": "ja",
+    "expected": "画面の文字を選択してください。",
+    "desktop": "画面の文字を選択してください。",
+    "sha256": "f6455ee2904503e865eccc501b7fce5096bba34438c294f4a942119d779b3f72"
+  }
+]

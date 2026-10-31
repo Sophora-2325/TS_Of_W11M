@@ -1,0 +1,2 @@
+PASS: system stop clears capture; restart needs consent; refusal returns to stopped home
+PASS: restored previously validated debug package; session stopped

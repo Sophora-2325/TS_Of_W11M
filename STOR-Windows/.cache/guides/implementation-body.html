@@ -1,0 +1,544 @@
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top" aria-label="回到页首">
+      <span class="brand-tick" aria-hidden="true"></span>
+      <span class="brand-name">STOR</span>
+      <span class="brand-sub">Android 屏幕翻译 · 开发计划与验收</span>
+    </a>
+    <nav class="doc-switch" aria-label="方案文档">
+      <a href="product-manager-guide.html">讲解书</a>
+      <a href="technical-stack.html">技术栈</a>
+      <a href="implementation-plan.html" aria-current="page">开发计划</a>
+    </nav>
+    <span class="readout" id="readout" aria-hidden="true">已读 0%</span>
+    <div class="top-actions">
+      <button class="icon-btn toc-open" id="toc-open" type="button" aria-haspopup="dialog">目录</button>
+      <button class="icon-btn" id="print-btn" type="button">打印 / PDF</button>
+    </div>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<dialog class="toc-dialog" id="toc-dialog" aria-labelledby="toc-dialog-title">
+  <div class="toc-dialog-in">
+    <div class="toc-dialog-head">
+      <h2 class="toc-dialog-title" id="toc-dialog-title">目录</h2>
+      <button class="icon-btn" type="button" id="toc-close" aria-label="关闭目录">关闭</button>
+    </div>
+    <ol class="dialog-list">
+      <li><a href="#decisions"><span class="n">1</span><span>本轮决定</span></a></li>
+      <li><a href="#stages"><span class="n">2</span><span>开发顺序与放行条件</span></a></li>
+      <li><a href="#p0p1"><span class="n">3</span><span>P0 / P1：先验证平台主流程</span></a></li>
+      <li><a href="#p2"><span class="n">4</span><span>P2：让同一模型得到可靠结果</span></a></li>
+      <li><a href="#targets"><span class="n">5</span><span>拟定体验目标</span></a></li>
+      <li><a href="#p3"><span class="n">6</span><span>P3：闭环和必要测试</span></a></li>
+      <li><a href="#p4"><span class="n">7</span><span>P4：通用适配矩阵</span></a></li>
+      <li><a href="#delivery"><span class="n">8</span><span>最终交付清单</span></a></li>
+      <li><a href="#quiz"><span class="n">测</span><span>学完自测</span></a></li>
+    </ol>
+    <div class="dialog-foot">
+      <p>版本 2026-10-27 · 计划交付完成，应用尚未开发</p>
+      <button class="icon-btn" type="button" id="print-btn-mobile">打印 / 导出 PDF</button>
+    </div>
+  </div>
+</dialog>
+
+<noscript>
+  <div class="wrap">
+    <p class="callout noscript-note">本页正文与表格无需脚本即可阅读；目录面板与自测需要启用 JavaScript。</p>
+  </div>
+</noscript>
+
+<main id="content">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker">Android 屏幕翻译</p>
+        <h1>开发计划与验收</h1>
+        <p class="hero-statement">从 <strong>P0 基线准备</strong> 到 <strong>P5 交付</strong>：先验证取图与模型，再补完整闭环，最后做通用适配。</p>
+        <p class="hero-desc">估算合计 20–32 个工作日，约 4–7 周；前提是一名熟悉 Android 的开发者持续投入、能获得测试机、翻译服务已可用。OCR 后处理适配和 OEM 后台差异是主要不确定项。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#decisions">从第一章开始 <span class="arr" aria-hidden="true">↓</span></a>
+          <a class="link-quiet" href="#stages">看放行条件</a>
+          <a class="link-quiet" href="#quiz">直接自测</a>
+        </div>
+        <div class="hero-meta">
+          <span>版本 2026-10-27</span>
+          <span>状态：计划交付完成，应用尚未开发</span>
+          <span>配套：<a href="product-manager-guide.html">讲解书</a>、<a href="technical-stack.html">技术栈方案</a></span>
+        </div>
+        <nav class="print-toc" aria-label="印刷版章节目录">
+          <p class="print-toc-title">目录</p>
+          <ol>
+            <li><a href="#decisions">1　本轮决定</a></li>
+            <li><a href="#stages">2　开发顺序与放行条件</a></li>
+            <li><a href="#p0p1">3　P0 / P1：先验证平台主流程</a></li>
+            <li><a href="#p2">4　P2：让同一模型在手机上得到可靠结果</a></li>
+            <li><a href="#targets">5　拟定体验目标</a></li>
+            <li><a href="#p3">6　P3：闭环和必要测试</a></li>
+            <li><a href="#p4">7　P4：通用适配矩阵</a></li>
+            <li><a href="#delivery">8　最终交付清单</a></li>
+          </ol>
+        </nav>
+      </div>
+
+      <figure class="demo plan-figure" aria-labelledby="plan-caption">
+        <div class="plan-card" aria-hidden="true">
+          <div class="plan-top"><span>阶段 / 拟定工期</span><span class="unverified">非承诺</span></div>
+          <div class="plan-total"><strong>20–32</strong><span>工作日</span><em>约 4–7 周</em></div>
+          <ol class="plan-stages">
+            <li class="plan-row"><span class="plan-name">P0 基线准备</span><span class="plan-bar" style="--w:25%"></span><span class="plan-days">1–2 天</span></li>
+            <li class="plan-row"><span class="plan-name">P1 平台原型</span><span class="plan-bar" style="--w:62%"></span><span class="plan-days">3–5 天</span></li>
+            <li class="plan-row"><span class="plan-name">P2 OCR 原型</span><span class="plan-bar" style="--w:100%"></span><span class="plan-days">5–8 天</span></li>
+            <li class="plan-row"><span class="plan-name">P3 完整 MVP</span><span class="plan-bar" style="--w:87%"></span><span class="plan-days">5–7 天</span></li>
+            <li class="plan-row"><span class="plan-name">P4 通用适配</span><span class="plan-bar" style="--w:100%"></span><span class="plan-days">5–8 天</span></li>
+            <li class="plan-row"><span class="plan-name">P5 交付</span><span class="plan-bar" style="--w:25%"></span><span class="plan-days">1–2 天</span></li>
+          </ol>
+          <p class="plan-note">P1 / P2 完成后依据实测重估；不把当前数字当作交付承诺。</p>
+        </div>
+        <figcaption class="demo-caption" id="plan-caption">阶段与工期的学习示意；具体条件与数字以正文为准。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <nav class="rail" aria-label="章节目录">
+      <p class="rail-title">目录</p>
+      <ol class="rail-list" id="rail-list">
+        <li><a href="#decisions"><span class="n">1</span><span>本轮决定</span></a></li>
+        <li><a href="#stages"><span class="n">2</span><span>开发顺序与放行</span></a></li>
+        <li><a href="#p0p1"><span class="n">3</span><span>P0 / P1</span></a></li>
+        <li><a href="#p2"><span class="n">4</span><span>P2 OCR 原型</span></a></li>
+        <li><a href="#targets"><span class="n">5</span><span>体验目标</span></a></li>
+        <li><a href="#p3"><span class="n">6</span><span>P3 闭环测试</span></a></li>
+        <li><a href="#p4"><span class="n">7</span><span>P4 通用适配</span></a></li>
+        <li><a href="#delivery"><span class="n">8</span><span>交付清单</span></a></li>
+        <li><a href="#quiz"><span class="n">测</span><span>学完自测</span></a></li>
+      </ol>
+    </nav>
+
+    <div class="doc">
+
+      <section class="chapter" id="decisions">
+        <header class="chapter-head">
+          <span class="ch-num" aria-hidden="true">1</span>
+          <h2><span class="sr-only">第 1 章：</span>本轮决定</h2>
+        </header>
+        <div class="chapter-body chapter-body--single">
+          <div class="chapter-main prose">
+            <ul class="observe">
+              <li>用户要求通用版，不限定某台手机；以 Android 9+ ARM64 手机为首批范围，至少按 target / compile API 36 规划。</li>
+              <li>原生 Kotlin；Compose 主界面，WindowManager 浮层；PP-OCRv6 small + ORT Android 优先。</li>
+              <li>主动开启捕获会话后退到后台出现浮键；同会话可多次使用；会话结束移除浮键。</li>
+              <li>冻结图矩形框选并确认识别 → 本地 OCR → 可编辑原文 → 点击翻译 → 结果卡片。</li>
+              <li>首版英日译中，OCR 验证中英日；单个用户自配 HTTPS 翻译服务，先交付内测 APK。</li>
+            </ul>
+          </div>
+        </div>
+        <footer class="takeaways">
+          <p class="takeaways-title">本章要点</p>
+          <ul>
+            <li>首批范围是 Android 9+ ARM64 通用手机，原生 Kotlin，PP-OCRv6 small + ORT 优先。</li>
+            <li>先交付内测 APK；首版英日译中，OCR 验证中英日。</li>
+          </ul>
+        </footer>
+      </section>
+
+      <section class="chapter" id="stages">
+        <header class="chapter-head">
+          <span class="ch-num" aria-hidden="true">2</span>
+          <h2><span class="sr-only">第 2 章：</span>开发顺序与放行条件</h2>
+        </header>
+        <div class="chapter-body">
+          <div class="chapter-main prose">
+            <p>每一阶段应交付可复核结果。这里的“放行”是技术证据门槛，不要求每步都等待用户确认；遇到明确影响范围、体验或模型路线的变化时再说明取舍。</p>
+            <ol class="stage-list">
+              <li class="stage-card">
+                <div><div class="stage-id">P0</div><div class="stage-days">1–2 天</div></div>
+                <div class="stage-main">
+                  <h3>基线准备</h3>
+                  <div class="stage-cols">
+                    <div><span>工作与交付</span><p>独立 Android 工程位置；SDK / 依赖 / ABI 清单；截图样本与标注规则；测试机矩阵。</p></div>
+                    <div><span>验收 / 进入下一阶段</span><p>依赖可获取且 minSdk 不冲突；首批原生库有兼容方案；样本不含敏感内容。</p></div>
+                  </div>
+                </div>
+              </li>
+              <li class="stage-card">
+                <div><div class="stage-id">P1</div><div class="stage-days">3–5 天</div></div>
+                <div class="stage-main">
+                  <h3>平台纵向原型</h3>
+                  <div class="stage-cols">
+                    <div><span>工作与交付</span><p>前台开启、授权、投屏服务、浮键、取新帧、冻结框选、取消、结束。</p></div>
+                    <div><span>验收 / 进入下一阶段</span><p>真机完成整条路径；浮键不进入截图；横竖屏坐标准确；停止后资源释放。</p></div>
+                  </div>
+                </div>
+              </li>
+              <li class="stage-card">
+                <div><div class="stage-id">P2</div><div class="stage-days">5–8 天</div></div>
+                <div class="stage-main">
+                  <h3>OCR 原型</h3>
+                  <div class="stage-cols">
+                    <div><span>工作与交付</span><p>接入当前模型 / 字典 / config；完整前后处理；分层准确率、耗时、内存报告。</p></div>
+                    <div><span>验收 / 进入下一阶段</span><p>同图桌面 / Android 对齐；中英日普通印刷体可用；清楚定位复杂字体失败；有真机性能结论。</p></div>
+                  </div>
+                </div>
+              </li>
+              <li class="stage-card">
+                <div><div class="stage-id">P3</div><div class="stage-days">5–7 天</div></div>
+                <div class="stage-main">
+                  <h3>完整 MVP</h3>
+                  <div class="stage-cols">
+                    <div><span>工作与交付</span><p>首页设置、结果卡片、原文编辑、翻译 / 流式 / 取消 / 复制、重选、缓存。</p></div>
+                    <div><span>验收 / 进入下一阶段</span><p>可安装 APK 完成真实闭环；未点翻译不发翻译请求；断网等已知失败不丢原文。</p></div>
+                  </div>
+                </div>
+              </li>
+              <li class="stage-card">
+                <div><div class="stage-id">P4</div><div class="stage-days">5–8 天</div></div>
+                <div class="stage-main">
+                  <h3>通用适配与体验</h3>
+                  <div class="stage-cols">
+                    <div><span>工作与交付</span><p>多厂商 / 系统、游戏与阅读场景、后台、通知、锁屏、键盘、连续使用、耗电。</p></div>
+                    <div><span>验收 / 进入下一阶段</span><p>关键矩阵通过；未通过项列出具体设备和表现；完成性能 / 体积优化复测。</p></div>
+                  </div>
+                </div>
+              </li>
+              <li class="stage-card">
+                <div><div class="stage-id">P5</div><div class="stage-days">1–2 天</div></div>
+                <div class="stage-main">
+                  <h3>交付</h3>
+                  <div class="stage-cols">
+                    <div><span>工作与交付</span><p>release 签名 APK、版本说明、已知限制、升级验证和第三方说明。</p></div>
+                    <div><span>验收 / 进入下一阶段</span><p>干净安装和升级成功；最终产物与测试版本一致；原生库和 16 KB 环境检查通过。</p></div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+            <p>估算合计 <strong>20–32 个工作日，约 4–7 周</strong>，前提是一名熟悉 Android 的开发者持续投入、能获得测试机、翻译服务已可用。OCR 后处理适配和 OEM 后台差异是主要不确定项；不包含广泛兼容所有设备、商店审核等待、账号后台或自研翻译模型。P1 / P2 完成后依据实测重估，不把当前数字当作交付承诺。</p>
+            <div class="callout">
+              <p><strong>优先保证 P1 和 P2 的证据；</strong>不要先完成全部视觉界面，再验证能否顺手截图和跑模型。</p>
+            </div>
+          </div>
+          <aside class="chapter-notes">
+            <div class="note">
+              <span class="note-label">易错点</span>
+              <p><strong>先证据，后界面。</strong>P1 / P2 不通过，后面做多少界面都不能证明核心路径可跑。</p>
+            </div>
+          </aside>
+        </div>
+        <footer class="takeaways">
+          <p class="takeaways-title">本章要点</p>
+          <ul>
+            <li>P0–P5 逐段交付可复核结果；合计 20–32 个工作日，是估算而非承诺。</li>
+            <li>优先保证 P1 / P2 的证据，不要先做完整视觉界面。</li>
+          </ul>
+        </footer>
+      </section>
+
+      <section class="chapter" id="p0p1">
+        <header class="chapter-head">
+          <span class="ch-num" aria-hidden="true">3</span>
+          <h2><span class="sr-only">第 3 章：</span>P0 / P1：先验证平台主流程</h2>
+        </header>
+        <div class="chapter-body">
+          <div class="chapter-main prose">
+            <p>建议新项目与 Windows STOR 分开存放，例如以后建立独立 <code>STOR-Android</code> 仓库；本轮仅保留文档，不创建工程或修改桌面功能。</p>
+            <h3>任务顺序</h3>
+            <ol class="steps">
+              <li class="step"><span class="step-num" aria-hidden="true">1</span><p>锁定 Kotlin、AGP、Compose、ORT、OpenCV 稳定兼容版本，检查 ABI、最低系统、许可证和原生库页大小。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">2</span><p>建立开始 / 结束按钮和权限说明，Android 版本分支仅覆盖系统明确要求。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">3</span><p>按正确顺序取得捕获同意、启动前台服务、建立唯一活跃 VirtualDisplay。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">4</span><p>实现可拖动吸边的浮键；主应用前台隐藏，切出后显示。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">5</span><p>隐藏自己的浮层后取得新帧；及时关闭不用的 Image，不保存录像。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">6</span><p>在原始截图上显示框选层，完成显示坐标到图片坐标的换算，允许调整及取消。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">7</span><p>响应系统停止和锁屏；释放投屏、帧、窗口，结束会话。</p></li>
+            </ol>
+            <h3>必须验证</h3>
+            <ul class="observe">
+              <li>竖屏阅读应用、横屏游戏各完成一次截图框选。</li>
+              <li>连续点取不同画面，确实得到新图；浮键和旧结果没有被拍入。</li>
+              <li>有状态栏、刘海和不同缩放时，实际裁剪区域与视觉选框一致。</li>
+              <li>取消后能继续使用；正在框选或处理时的再次触发行为明确。</li>
+              <li>拒绝权限不循环请求；系统结束会话后不能继续用旧授权捕获。</li>
+              <li>默认整屏捕获与系统单应用选择的差异得到说明。</li>
+            </ul>
+            <div class="callout">
+              <p><strong>P1 交付证据：</strong>设备 / 系统 / 安装包版本、真实录屏、操作结果、待命内存与投屏待命耗电初步基线。</p>
+            </div>
+          </div>
+          <aside class="chapter-notes">
+            <div class="note">
+              <span class="note-label">易错点</span>
+              <p>P1 的交付证据是<strong>真机录屏 + 内存/耗电基线</strong>，不是一张成功截图。</p>
+            </div>
+          </aside>
+        </div>
+        <footer class="takeaways">
+          <p class="takeaways-title">本章要点</p>
+          <ul>
+            <li>P0 定工程、依赖、ABI、样本与测试机；P1 跑通授权、浮键、取新帧、框选与释放。</li>
+            <li>必须验证浮键不进入截图、坐标准确、拒绝权限不循环、停止后释放资源。</li>
+          </ul>
+        </footer>
+      </section>
+
+      <section class="chapter" id="p2">
+        <header class="chapter-head">
+          <span class="ch-num" aria-hidden="true">4</span>
+          <h2><span class="sr-only">第 4 章：</span>P2：让同一模型在手机上得到可靠结果</h2>
+        </header>
+        <div class="chapter-body">
+          <div class="chapter-main prose">
+            <p>使用当前模型 revision 和 SHA-256，不在迁移过程中同时换模型。先让同一张裁剪图输出一致，再逐项优化。</p>
+            <ol class="steps">
+              <li class="step"><span class="step-num" aria-hidden="true">1</span><p>检查 ONNX 输入 / 输出、动态维度、字典、颜色和归一化。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">2</span><p>完成 DB 后处理、文字框扩张及裁剪；选择并锁定实际所用几何库，保留许可证。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">3</span><p>完成识别宽高比 / padding、CTC 解码和排序。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">4</span><p>对照桌面样本逐段排查，不能仅以“ORT 没报错”为完成标准。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">5</span><p>进入翻译会话时异步预热模型，前台交互不中断；会话中复用 session，结束后释放。</p></li>
+              <li class="step"><span class="step-num" aria-hidden="true">6</span><p>只识别用户裁剪区域；先使用当前配置，依据失败样本决定是否改变检测尺寸或参数。</p></li>
+            </ol>
+            <p>样本集建议 150 张带正确文本的真实裁剪图：英文 50、日文 50、中文 / 混排 50。三组内分别包含普通印刷、小字、描边 / 复杂背景；语言与难度是交叉维度，不混成一个平均分。保留一部分样本只做最终验收，不反复用于调参。</p>
+            <div class="sample">
+              <div class="sample-head"><span>样本构成建议 · 150 张真实裁剪图</span><span>语言与难度交叉</span></div>
+              <div class="sample-bar" aria-hidden="true">
+                <span class="sample-seg sample-seg--en"></span>
+                <span class="sample-seg sample-seg--ja"></span>
+                <span class="sample-seg sample-seg--zh"></span>
+              </div>
+              <div class="sample-legend">
+                <span><i style="background:var(--pine)"></i>英文 50</span>
+                <span><i style="background:var(--accent)"></i>日文 50</span>
+                <span><i style="background:var(--line-strong)"></i>中文 / 混排 50</span>
+              </div>
+            </div>
+            <h3>报告包括</h3>
+            <ul class="observe">
+              <li>普通印刷与困难场景分别的 CER、漏行率、“无需修改即可翻译”比例。</li>
+              <li>模型冷加载、暖 OCR 的 p50 / p95；线程设置与输入尺寸。</li>
+              <li>应用待命、模型就绪、OCR 峰值内存；连续运行后温升。</li>
+              <li>代表性失败图片及原因；桌面和手机的差异。</li>
+            </ul>
+            <p>如果不通过，先判断前后处理、裁剪清晰度、输入尺寸还是模型本身的问题。仅在证据说明现有路线不合适时，做一次 ML Kit 对照或其他模型评估；首版不增加自动引擎切换。</p>
+          </div>
+          <aside class="chapter-notes">
+            <div class="note">
+              <span class="note-label">易错点</span>
+              <p>样本<strong>不混成一个平均分</strong>；保留一部分只做最终验收，不反复用于调参。</p>
+            </div>
+          </aside>
+        </div>
+        <footer class="takeaways">
+          <p class="takeaways-title">本章要点</p>
+          <ul>
+            <li>先让同一张裁剪图在桌面和 Android 输出一致，再逐项优化速度与内存。</li>
+            <li>150 张样本按语言分三组、难度交叉；报告 CER、漏行率、p50/p95、内存与温升。</li>
+          </ul>
+        </footer>
+      </section>
+
+      <section class="chapter" id="targets">
+        <header class="chapter-head">
+          <span class="ch-num" aria-hidden="true">5</span>
+          <h2><span class="sr-only">第 5 章：</span>拟定体验目标</h2>
+        </header>
+        <div class="chapter-body">
+          <div class="chapter-main prose">
+            <div class="callout">
+              <p><strong>下表是用于 PoC 的初始目标，不是已测结果或对全部设备的承诺。</strong>使用 release / benchmark 构建和真机；先选一台 6–8 GB 内存的近年中档 ARM64 手机作为参考机，记录实际型号、系统、刷新率和输入样本。低端机及高端机另行报告。</p>
+            </div>
+            <div class="table-wrap">
+              <p class="table-title" id="targets-table-title">指标与初始目标</p>
+              <table class="spec-table" aria-labelledby="targets-table-title">
+                <thead>
+                  <tr><th scope="col">指标</th><th scope="col">初始目标 / 验收办法</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td data-label="指标">点击反馈</td><td data-label="初始目标 / 验收办法">p95 ≤ 100 ms，忙碌状态及时可见。</td></tr>
+                  <tr><td data-label="指标">点浮键到冻结图可选</td><td data-label="初始目标 / 验收办法">已授权、会话活跃时 p95 ≤ 500 ms；不含系统授权与人手操作时间。</td></tr>
+                  <tr><td data-label="指标">拖动框选</td><td data-label="初始目标 / 验收办法">60 Hz 基线下无明显停顿；统计帧耗时，调查可复现长帧。</td></tr>
+                  <tr><td data-label="指标">暖 OCR</td><td data-label="初始目标 / 验收办法">约 1000×500 像素、1–5 行普通文字裁剪图，p95 ≤ 1.5 s，固定样本说明。</td></tr>
+                  <tr><td data-label="指标">首次模型加载</td><td data-label="初始目标 / 验收办法">独立报告；先争取 ≤ 3 s，异步显示准备状态，不把加载时间隐藏在统计外。</td></tr>
+                  <tr><td data-label="指标">普通印刷体精度</td><td data-label="初始目标 / 验收办法">初步争取 CER ≤ 3%、漏行率 ≤ 2%、无需修改比例 ≥ 90%；按语言分别报，P2 决定是否可作为发布门槛。</td></tr>
+                  <tr><td data-label="指标">复杂字体 / 小字</td><td data-label="初始目标 / 验收办法">单独报告，不用普通文字成绩覆盖；以真实可用性决定首发支持范围。</td></tr>
+                  <tr><td data-label="指标">联网翻译</td><td data-label="初始目标 / 验收办法">分别统计请求到首字和到完整结果的 p50/p95；提供服务、网络条件，不设假装能控制服务端的统一承诺。</td></tr>
+                  <tr><td data-label="指标">APK</td><td data-label="初始目标 / 验收办法">先争取单 ARM64 release APK ≤ 100 MB（包含模型），P2 拆解实际组成后确认；安装占用另报。</td></tr>
+                  <tr><td data-label="指标">内存</td><td data-label="初始目标 / 验收办法">分别报告未开启、投屏待命、OCR 峰值；参考机峰值先争取 ≤ 300 MB，P2 重估。</td></tr>
+                  <tr><td data-label="指标">待命与耗电</td><td data-label="初始目标 / 验收办法">同机、同亮度 / 网络 / 前台内容，对比不开会话与开启但不点击各 30–60 分钟；重复测功耗 / 温升，不能只凭电量百分比下结论。</td></tr>
+                  <tr><td data-label="指标">连续使用</td><td data-label="初始目标 / 验收办法">30 分钟完成约 50 次截图识别，观察内存趋势、卡顿和结束后释放；不是只检查有没有崩溃。</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>每个目标未达标时，先出瓶颈证据，再决定取舍。不要为了命中未经验证的数字，提前加入 GPU、多线程池、量化或复杂模型下载系统。</p>
+          </div>
+          <aside class="chapter-notes">
+            <div class="note">
+              <span class="note-label">易错点</span>
+              <p>这些数字是 <strong>PoC 拟定目标</strong>，不是已测结果，也不是对所有设备的承诺。</p>
+            </div>
+          </aside>
+        </div>
+        <footer class="takeaways">
+          <p class="takeaways-title">本章要点</p>
+          <ul>
+            <li>体验目标是拟定值；先选参考机，记录型号、系统、刷新率与样本再报告。</li>
+            <li>未达标先出瓶颈证据，不为了命中数字提前上 GPU、量化或复杂下载系统。</li>
+          </ul>
+        </footer>
+      </section>
+
+      <section class="chapter" id="p3">
+        <header class="chapter-head">
+          <span class="ch-num" aria-hidden="true">6</span>
+          <h2><span class="sr-only">第 6 章：</span>P3：闭环和必要测试</h2>
+        </header>
+        <div class="chapter-body">
+          <div class="chapter-main prose">
+            <p>首版翻译设置只包含基础地址、模型、Key、目标语言。基础地址规则在入口校验一次，网络响应在客户端解析边界校验；内部不重复堆叠防御。</p>
+            <p>用固定本地测试响应验证 SSE 分片、中文 / 日文 UTF-8 边界、取消和非正常结束；不为验证功能自动调用付费模型。真实翻译内测由用户提供可用服务并明确测试内容。</p>
+            <h3>只保留必要测试</h3>
+            <ul class="observe">
+              <li>坐标映射及原图裁剪，覆盖常见旋转 / 留边条件。</li>
+              <li>OCR 前后处理和固定样本输出对照。</li>
+              <li>翻译流式解析、取消、错误和缓存语义。</li>
+              <li>系统权限 / 生命周期、键盘 / 触摸等靠真机验证，模拟器补系统分支。</li>
+            </ul>
+            <div class="callout">
+              <p>重选应区分“在本张冻结图调整选区”与“重新截取当前画面”；按钮文案清楚。编辑原文后旧译文失效。切换任务取消当前等待，不让上一段译文继续混入新原文。</p>
+            </div>
+          </div>
+          <aside class="chapter-notes">
+            <div class="note">
+              <span class="note-label">易错点</span>
+              <p>“重选”有两种含义：<strong>调整本张冻结图的选区</strong>，和重新截取当前画面；按钮文案要区分。</p>
+            </div>
+          </aside>
+        </div>
+        <footer class="takeaways">
+          <p class="takeaways-title">本章要点</p>
+          <ul>
+            <li>只保留必要测试；用固定本地响应验证 SSE、编码边界、取消与缓存。</li>
+            <li>重选语义、编辑原文清空译文、切换任务取消旧等待，都要在文案和行为上清楚。</li>
+          </ul>
+        </footer>
+      </section>
+
+      <section class="chapter" id="p4">
+        <header class="chapter-head">
+          <span class="ch-num" aria-hidden="true">7</span>
+          <h2><span class="sr-only">第 7 章：</span>P4：通用适配矩阵</h2>
+        </header>
+        <div class="chapter-body">
+          <div class="chapter-main prose">
+            <div class="table-wrap">
+              <p class="table-title" id="matrix-table-title">最小覆盖矩阵</p>
+              <table class="spec-table" aria-labelledby="matrix-table-title">
+                <thead>
+                  <tr><th scope="col">维度</th><th scope="col">最小覆盖</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td data-label="维度">性能</td><td data-label="最小覆盖">一台较低性能真机、一台中档真机、一台近年较高性能真机。</td></tr>
+                  <tr><td data-label="维度">厂商</td><td data-label="最小覆盖">至少三个厂商系列，覆盖真实使用中常见的后台策略；尽量包含不依赖 GMS 的环境。</td></tr>
+                  <tr><td data-label="维度">系统</td><td data-label="最小覆盖">Android 9/10 兼容基线、13 通知权限、14 捕获授权、15 QPR1+ 锁屏行为、16；无法获得的版本明确标未测。</td></tr>
+                  <tr><td data-label="维度">页面</td><td data-label="最小覆盖">普通阅读、图片文字、横屏游戏、目标页禁止截图或隐藏浮层。</td></tr>
+                  <tr><td data-label="维度">操作</td><td data-label="最小覆盖">开始、拒绝、取消、重选、连续触发、旋转、键盘、锁屏、系统停止投屏、再次开启。</td></tr>
+                  <tr><td data-label="维度">资源</td><td data-label="最小覆盖">模型预热、空闲、连续识别、结束会话、进程被系统回收后的再次开启。</td></tr>
+                  <tr><td data-label="维度">安装</td><td data-label="最小覆盖">干净安装、覆盖升级、权限重新授权、16 KB 原生环境。</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>模拟器可补版本覆盖，不能替代厂商真机后台、触感、功耗和温升证据。无法拿到的设备不写“全部兼容”。</p>
+            <h3>优化顺序</h3>
+            <div class="flow">
+              <span class="flow-step">找慢阶段</span><span class="flow-arrow" aria-hidden="true">→</span>
+              <span class="flow-step">减少无用图片复制和主线程工作</span><span class="flow-arrow" aria-hidden="true">→</span>
+              <span class="flow-step">调整线程 / 输入尺寸</span><span class="flow-arrow" aria-hidden="true">→</span>
+              <span class="flow-step">测 R8 与 Baseline Profiles</span><span class="flow-arrow" aria-hidden="true">→</span>
+              <span class="flow-step">仍有问题时评估 XNNPACK 或 Runtime 裁剪</span>
+            </div>
+            <p>每次优化同时回测 OCR 输出，避免速度提升却丢字。</p>
+          </div>
+          <aside class="chapter-notes">
+            <div class="note">
+              <span class="note-label">易错点</span>
+              <p>模拟器补不了厂商真机的后台、触感和温升；<strong>无法拿到的设备写未测</strong>，不写“全部兼容”。</p>
+            </div>
+          </aside>
+        </div>
+        <footer class="takeaways">
+          <p class="takeaways-title">本章要点</p>
+          <ul>
+            <li>矩阵覆盖性能、厂商、系统、页面、操作、资源与安装；模拟器不能替代真机后台与温升。</li>
+            <li>优化按顺序找慢阶段；每次提速都要回测 OCR 输出。</li>
+          </ul>
+        </footer>
+      </section>
+
+      <section class="chapter" id="delivery">
+        <header class="chapter-head">
+          <span class="ch-num" aria-hidden="true">8</span>
+          <h2><span class="sr-only">第 8 章：</span>最终交付清单</h2>
+        </header>
+        <div class="chapter-body">
+          <div class="chapter-main prose">
+            <ul class="observe">
+              <li>内测 release APK、版本与校验值、对应源代码版本。</li>
+              <li>安装与开启说明：权限、系统投屏提示、停止入口。</li>
+              <li>多设备结果表：明确已测、未测、已知限制。</li>
+              <li>性能 / 准确率 / 体积 / 耗电报告及测试条件。</li>
+              <li>第三方许可证与数据流说明。</li>
+              <li>后续事项按真实问题排序，不把未实现的规划写成修复完成。</li>
+            </ul>
+            <div class="callout">
+              <p><strong>完成定义：</strong>用户在已支持的游戏 / 阅读场景中，不需要开发者陪同，能开启会话、截图框选、修正原文、得到译文、回到原任务，并可明确结束。签名 APK、构建成功和模拟器运行各是不同证据，均不单独代表通用真机体验通过。</p>
+            </div>
+            <p>公开上架是后续决策，单独核对当时商店的 target SDK、前台服务声明、隐私与分发要求；本计划不承诺审核结果。</p>
+          </div>
+          <aside class="chapter-notes">
+            <div class="note">
+              <span class="note-label">易错点</span>
+              <p><strong>三种证据不能互相替代</strong>：签名 APK、构建成功、模拟器运行，都不等于通用真机体验通过。</p>
+            </div>
+          </aside>
+        </div>
+        <footer class="takeaways">
+          <p class="takeaways-title">本章要点</p>
+          <ul>
+            <li>交付包含 APK、安装说明、多设备结果表、性能/准确率报告、许可证与数据流说明。</li>
+            <li>完成定义是用户独立跑通闭环；上架与审核是后续独立决策。</li>
+          </ul>
+        </footer>
+      </section>
+
+      <section class="chapter quiz-section" id="quiz">
+        <header class="chapter-head">
+          <span class="ch-num" aria-hidden="true">测</span>
+          <h2>学完自测</h2>
+        </header>
+        <p class="quiz-intro">5 道题，选完立即判定。答错不要紧：每题解析都标了对应章节，可以点回去重读。</p>
+        <div class="quiz-list" id="quiz-list"></div>
+        <div class="quiz-bar">
+          <p class="quiz-score" role="status" aria-live="polite" id="quiz-score">已答 0 / 5，答对 0</p>
+          <button class="ghost-btn" type="button" id="quiz-reset">重新作答</button>
+        </div>
+      </section>
+
+      <section class="related" aria-labelledby="related-title">
+        <h2 id="related-title">配套文档</h2>
+        <div class="related-links">
+          <a href="product-manager-guide.html">产品经理讲解书</a>
+          <a href="technical-stack.html">技术栈方案</a>
+          <a href="implementation-plan.md">开发计划原文（Markdown）</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>内容整理自 <a href="implementation-plan.md">《Android 屏幕翻译：开发计划与验收》</a>（2026-10-27 版）。本页为学习版，章节要点、边注与自测为辅助；事实、条件与数字以原文为准。</p>
+    <p class="foot-meta">STOR Android 方案，版本 2026-10-27</p>
+  </div>
+</footer>
