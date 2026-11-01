@@ -3,6 +3,7 @@ name = "stor"
 version = "0.1.0"
 description = "STOR - Game screen OCR translation tool"
 authors = ["wtp"]
+license = "GPL-3.0-or-later"
 edition = "2021"
 
 [lib]

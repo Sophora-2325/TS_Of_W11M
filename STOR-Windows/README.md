@@ -132,30 +132,33 @@ PP-OCRv6 small 的当前交付使用 NSIS 安装包；旧 MSI 产物不代表已
 模型部署、协议、构建命令与验证边界见 [本地 OCR 实现说明](docs/ocr-v6-local.md)。
 构建前还须按 [内置引擎资源说明](src-tauri/resources/llama.cpp/README.md) 准备固定 ZIP，并运行 `npm run engine:check`。发布构建会同时检查 OCR 和引擎资源，缺失或校验失败时停止。
 
-- [Node.js](https://nodejs.org/) 20+
+- [Node.js](https://nodejs.org/) 20.19+（20.x）或 22.12+
 - [Rust](https://rustup.rs/)（rustup）
 - [Visual Studio Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) — 勾选「使用 C++ 的桌面开发」
 
 ### 本地开发
 
 ```powershell
-git clone <your-repo-url>
-cd STOR
-npm install
-npm run tauri dev
+git clone https://github.com/Sophora-2325/TS_Of_W11M.git
+cd TS_Of_W11M/STOR-Windows
+npm ci
+npm run ocr:prepare
+# 按上方说明准备固定的 llama.cpp ZIP 后检查资源。
+npm run ocr:check
+npm run engine:check
+npm run tauri -- dev
 ```
 
 ### 打包发布
 
 ```powershell
-npm run tauri build
+npm run tauri -- build --bundles nsis
 ```
 
 产物输出目录：
 
 ```
 src-tauri/target/release/bundle/
-├── msi/STOR_0.1.0_x64_en-US.msi
 └── nsis/STOR_0.1.0_x64-setup.exe
 ```
 
@@ -174,7 +177,7 @@ STOR/
 ├── src-tauri/                    # 后端（Rust + Tauri 2）
 │   └── src/
 │       ├── capture/              # 屏幕截图
-│       ├── ocr/                  # Windows OCR
+│       ├── ocr/                  # PP-OCRv6 small 子进程管理
 │       ├── translate/            # OpenAI 兼容翻译客户端
 │       ├── config.rs             # 配置与密钥管理
 │       └── tray.rs               # 系统托盘
@@ -185,7 +188,7 @@ STOR/
 
 - **框架** — [Tauri 2](https://v2.tauri.app/) + [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
 - **截图** — [xcap](https://crates.io/crates/xcap)
-- **OCR** — Windows 内置 `Windows.Media.Ocr`
+- **OCR** — PP-OCRv6 small + RapidOCR + ONNX Runtime CPU（独立打包子进程）
 - **翻译** — OpenAI 兼容 Chat Completions 接口（云端 / 本地服务）
 - **密钥存储** — [keyring](https://crates.io/crates/keyring)（Windows Credential Manager）
 
@@ -193,7 +196,7 @@ STOR/
 
 **Q: 框选后没有识别出文字？**
 
-尝试在设置中将 OCR 语言改为与游戏文字一致的语言，或在翻译浮窗中手动输入原文。
+尝试缩小选区、使用更清晰的文字画面，或在翻译浮窗中手动输入原文。当前使用统一多语种模型，无需安装 Windows OCR 语言包；模型缺失时请修复安装。
 
 **Q: 全屏游戏中快捷键无反应？**
 
@@ -213,4 +216,4 @@ STOR/
 
 ## 许可证
 
-本项目为个人项目，暂未指定开源许可证。
+本项目原创代码采用 **GPL-3.0-or-later**，完整条款见仓库根目录的 [LICENSE](../LICENSE)。本项目免费提供；GPL 允许商业使用和收费分发，分发衍生版本须遵守相应源码提供义务。第三方库、模型和引擎保留各自许可证，详见 [项目说明](../README.md#许可证)。
